@@ -25,7 +25,7 @@ module.exports = function(grunt) {
     less: {
       default: {
         files: {
-          'wp-content/themes/my-theme/style.css': ['wp-content/themes/my-theme/styles/main.less']
+          'wp-content/themes/mr-consulting/style.css': ['wp-content/themes/mr-consulting/styles/main.less']
         }
       }
     },
@@ -75,7 +75,7 @@ module.exports = function(grunt) {
         livereload: true,
       },
       less: {
-      files: ['wp-content/themes/my-theme/styles/{,*/}*.less', 'wp-content/themes/my-theme/**/*.less'],
+      files: ['wp-content/themes/mr-consulting/styles/{,*/}*.less', 'wp-content/themes/mr-consulting/**/*.less'],
       tasks: ['less'],
       options: {
         livereload: true,
@@ -87,9 +87,9 @@ module.exports = function(grunt) {
     },
     livereload: {
       files: [
-    'wp-content/themes/my-theme{,*/}*.php',
+    'wp-content/themes/mr-consulting{,*/}*.php',
     '.tmp/styles/{,*/}*.css',
-    'wp-content/themes/my-theme/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
+    'wp-content/themes/mr-consulting/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
 ]
 }
 }

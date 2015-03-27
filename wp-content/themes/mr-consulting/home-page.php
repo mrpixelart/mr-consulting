@@ -15,7 +15,23 @@ get_header();
 	// });
 </script>
 
-<?php the_content(); ?>
+<div class="hero-image">
+	<div class="hero-solid">
+		<div class="ui page grid">
+			<div class="sixteen wide column">
+				<h1 class="hero-cta"><?php the_field('hero_headline'); ?></h1>
+				<p class="lead "><?php the_field('hero_description'); ?></p>
+				<a class=" waves-effect waves-light btn-cta btn-large"><?php the_field('hero_button'); ?></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="ui page grid">
+	<div class="sixteen wide column">
+		<?php the_content(); ?>
+	</div>
+</div>
 <!-- <div id="fullpage">
 	<div class="section">
 		<nav class="top-nav">

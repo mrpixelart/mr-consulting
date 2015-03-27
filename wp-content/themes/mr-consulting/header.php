@@ -18,14 +18,12 @@
 	<!-- 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"> -->
 	<!-- 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" /> -->
 	<!--	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bower_components/fullpage.js/jquery.fullpage.css" /> -->
-	<!--	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bower_components/materialize/dist/css/materialize.css" /> -->
-
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bower_components/semantic-ui/dist/semantic.min.css" />
 	
 	<!-- <script src="//code.jquery.com/jquery-1.11.2.min.js"></script> -->
 	<script src="<?php echo get_template_directory_uri(); ?>/bower_components/jquery/dist/jquery.js"></script>
 	<!-- 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> -->
 	<!-- 	<script src="<?php echo get_template_directory_uri(); ?>/bower_components/fullpage.js/jquery.fullpage.js"></script> -->
-	<!-- 	<script src="<?php echo get_template_directory_uri(); ?>/bower_components/materialize/dist/js/materialize.js"></script> -->
 
 
 
@@ -38,5 +36,14 @@
 </head>
 
 <body <?php body_class(); ?>>
-
+	<div class="ui fixed inverted menu">
+		<div class="container">
+			<a class="active item">
+				<i class="home icon"></i> Home
+			</a>
+			<a class="item">
+				<i class="mail icon"></i> Messages
+			</a>
+		</div>
+	</div>
 
