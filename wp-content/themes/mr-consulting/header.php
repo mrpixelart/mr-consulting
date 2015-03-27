@@ -36,7 +36,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<div class="ui fixed inverted menu">
+	<div class="ui fixed inverted menu large">
 		<div class="container">
 			<a class="active item">
 				<i class="home icon"></i> Home
@@ -46,4 +46,6 @@
 			</a>
 		</div>
 	</div>
+
+
 

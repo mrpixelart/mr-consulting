@@ -15,23 +15,40 @@ get_header();
 	// });
 </script>
 
-<div class="hero-image">
-	<div class="hero-solid">
-		<div class="ui page grid">
-			<div class="sixteen wide column">
-				<h1 class="hero-cta"><?php the_field('hero_headline'); ?></h1>
-				<p class="lead "><?php the_field('hero_description'); ?></p>
-				<a class=" waves-effect waves-light btn-cta btn-large"><?php the_field('hero_button'); ?></a>
-			</div>
+
+<div class="ui vertically padded page grid hero-solid">
+	<div class="column">
+		<div class="hero">
+			<h1 class="hero-cta"><?php the_field('hero_headline'); ?></h1>
+			<p class="lead"><?php the_field('hero_description'); ?></p>
+			<div class="huge ui inverted button "><?php the_field('hero_button'); ?></div>
 		</div>
 	</div>
 </div>
 
 <div class="ui page grid">
 	<div class="sixteen wide column">
-		<?php the_content(); ?>
+		<h2 class="ui huge header"><?php the_field('research_headline'); ?></h2>
 	</div>
+	<div class="ui divider"></div>
+	<?php if( have_rows('research_section') ): ?>
+		<?php while( have_rows('research_section') ): the_row(); 
+
+			// vars
+		$headline = get_sub_field('section_headline');
+		$body = get_sub_field('section_body');
+
+		?>
+
+		<div class="eight wide column">
+			<h3><?php echo $headline; ?></h3>
+			<p><?php echo $body; ?></p>
+		</div>
+	<?php endwhile; ?>
+<?php endif; ?>
+
 </div>
+
 <!-- <div id="fullpage">
 	<div class="section">
 		<nav class="top-nav">

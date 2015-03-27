@@ -53,10 +53,6 @@ Version: 0.1;
 .btn-cta:hover {
   background-color: #0d7a51;
 }
-body {
-  line-height: 1;
-  font-weight: 300;
-}
 .page-title {
   margin-top: 40px;
   max-width: 40%;
@@ -70,9 +66,9 @@ nav {
   box-shadow: none;
 }
 .hero {
-  background-size: cover;
   height: auto;
-  padding: 120px 0;
+  padding: 60px 0;
+  color: white;
 }
 .hero-image {
   background: url('images/blvd.jpg');
@@ -96,7 +92,6 @@ nav {
   border-bottom: 1px solid #d2d4d2;
 }
 .hero-cta {
-  padding-top: 80px;
   font-size: 4rem;
 }
 .center {
