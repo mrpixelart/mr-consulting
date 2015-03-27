@@ -10,13 +10,13 @@ get_header();
 
 ?>
 <script>
-	$(document).ready(function() {
-		$('#fullpage').fullpage();
-	});
+	// $(document).ready(function() {
+	// 	$('#fullpage').fullpage();
+	// });
 </script>
 
-
-<div id="fullpage">
+<?php the_content(); ?>
+<!-- <div id="fullpage">
 	<div class="section">
 		<nav class="top-nav">
 			<div class="container">
