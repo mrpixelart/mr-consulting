@@ -1,0 +1,137 @@
+/*
+Theme Name: Customer Blvd
+Theme URI: http://customerblvd.com
+Author: Slate Collective
+Author URI: http://slatecollective.com
+Description: Find your audience.
+Template: twentyfifteen
+Version: 0.1;
+*/
+.notop {
+  margin-top: 0;
+}
+.nobottom {
+  margin-bottom: 0;
+}
+.bump-top {
+  margin-top: 40px;
+}
+.bump-bottom {
+  margin-bottom: 20px;
+}
+.bump-right {
+  margin-right: 20px;
+}
+.bump-left {
+  margin-left: 20px;
+}
+::selection {
+  background-color: #12a86f;
+  color: #f1f1f1;
+}
+::-moz-selection {
+  background-color: #12a86f;
+  color: #f1f1f1;
+}
+.icon-1x {
+  font-size: 1em;
+}
+.icon-2x {
+  font-size: 2em;
+}
+.icon-3x {
+  font-size: 3em;
+}
+.icon-4x {
+  font-size: 4em;
+}
+.btn-cta {
+  background-color: #12a86f;
+  font-weight: 300;
+  font-size: 1.4em;
+}
+.btn-cta:hover {
+  background-color: #0d7a51;
+}
+body {
+  line-height: 1;
+  font-weight: 300;
+}
+.page-title {
+  margin-top: 40px;
+  max-width: 40%;
+  margin-left: -25px;
+}
+nav {
+  height: 0;
+  background: none;
+  color: #12a86f;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.hero {
+  background-size: cover;
+  height: auto;
+  padding: 140px 0;
+}
+.hero-image {
+  background: url('images/blvd.jpg');
+  height: auto;
+  background-size: cover;
+  color: white;
+}
+.hero-solid {
+  background: #12a86f;
+}
+.hero-overlay {
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(69, 69, 67, 0.82)), to(rgba(2, 39, 21, 0.57)));
+  background-image: -webkit-linear-gradient(top, rgba(69, 69, 67, 0.82), rgba(2, 39, 21, 0.57));
+  background-image: -moz-linear-gradient(top, rgba(69, 69, 67, 0.82), rgba(2, 39, 21, 0.57));
+  background-image: -o-linear-gradient(top, rgba(69, 69, 67, 0.82), rgba(2, 39, 21, 0.57));
+  background-image: -ms-linear-gradient(top, rgba(69, 69, 67, 0.82), rgba(2, 39, 21, 0.57));
+  background-image: linear-gradient(top, rgba(69, 69, 67, 0.82), rgba(2, 39, 21, 0.57));
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#454543', EndColorStr='#022715');
+}
+.hero-headline {
+  padding: 100px 0;
+  border-bottom: 1px solid #d2d4d2;
+}
+.hero-cta {
+  padding-top: 80px;
+  font-size: 6rem;
+}
+.center {
+  text-align: center;
+}
+.lead {
+  font-size: 1.8rem;
+  line-height: 2.4;
+  font-weight: 300;
+}
+.icon-image {
+  background-color: #12a86f;
+  color: white;
+  padding: 30px 0;
+}
+.price-title {
+  font-size: 2em;
+}
+.card-description {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+.card-price {
+  font-size: 48px;
+  font-weight: 800;
+  color: #12a86f;
+}
+.section {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.callout {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  text-align: center;
+}

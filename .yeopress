@@ -1,0 +1,16 @@
+{
+	"wpVer": "4.1.1",
+	"url": "http://mitchrayconsulting.com",
+	"tablePrefix": "wp_",
+	"dbHost": "localhost",
+	"dbName": "wp_mrconsulting",
+	"dbUser": "root",
+	"dbPass": "root",
+	"git": true,
+	"submodule": false,
+	"customDirs": false,
+	"installTheme": false,
+	"wpDir": ".",
+	"contentDir": "wp-content",
+	"saltKeys": "define('AUTH_KEY',         '1$S$,VfsLQM/]P|<9^FC%+] 3k%hu.6U3}oh,nA$IUL=8?.iTRv`<J94$f[&DQ?`');\ndefine('SECURE_AUTH_KEY',  '{1!oQxqx~P|*/g-sH;:>Yx)!ebVEC+P+eDBI~=8tUL)G1L~:sN)KlK nz}eY|_Wa');\ndefine('LOGGED_IN_KEY',    'Mn1|qJtb^J|7y2vO+w[@h!e|w58lE`FnT%lN,L>q+)}~r(E}@]f9z-pm%cj;*PP_');\ndefine('NONCE_KEY',        '3a<:Blm;Y+{[T7UC-%7hP,&D+q}+c>A:?b}<+q=RX|!6V~AGfQUjv%D}u!WN-E8i');\ndefine('AUTH_SALT',        'V:5ds#citj*NO_[gmL{`?9||W:rT1nvLf~j1+ks{49>nj1R,iFvv^6]DZZdjLbOS');\ndefine('SECURE_AUTH_SALT', 'JfK!+66<:`9siw(175?E;{kt60~iiew7,#&4-8f+Qem5B+|sLDsx:MDWKGG[ !-d');\ndefine('LOGGED_IN_SALT',   'Ah9-.)+uR%Yb 7LOVI>N2Z?:>/$;_+|IHH=0JX,*<tPZJ;m5xT} &2,n*lzwAn)`');\ndefine('NONCE_SALT',       'CC)FN|Z_bDN,)^q9?|Yh&&TcO$4UjyuJoZ`EUN<+: `p9Aq 6mqr`kkE(yTbs+/+');\n"
+}
