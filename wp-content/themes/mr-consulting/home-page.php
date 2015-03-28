@@ -41,10 +41,10 @@ get_header();
 		?>
 
 		<div class="eight wide column">
-			<img class="ui image centered" src="<?php echo $researchImage?>">
+			<img class="ui image centered" src="<?php echo $researchImage; ?>">
 			<h3><?php echo $researchHeadline; ?></h3>
 			<p><?php echo $researchBody; ?></p>
-			<a class="" href=""><?php echo $researchCta ?></a>
+			<a class="" href=""><?php echo $researchCta; ?></a>
 		</div>
 	<?php endwhile; ?>
 <?php endif; ?>
@@ -84,7 +84,6 @@ get_header();
 	<a href="#" class="lead"><?php the_field('planning_cta'); ?></a>
 	<img class="ui image" src="<?php the_field('planning_image'); ?>">
 </div>
-
 </div>
 
 <div class="ui vertically padded page grid hero-image-3">
@@ -109,7 +108,7 @@ get_header();
 			<div class="ui page grid">
 
 				<div class="four wide column">
-					<img class="ui image" src="<?php echo $buildImage?>">
+					<img class="ui image" src="<?php echo $buildImage; ?>">
 				</div>
 				<div class="twelve wide column">
 					<h3><?php echo $buildHeadline; ?></h3>
@@ -124,7 +123,45 @@ get_header();
 </div>
 </div>
 
+<div class="ui page grid">
 
+	<div class="sixteen wide column">
+		<h2 class="section-header center"><?php the_field('contact_headline'); ?></h2>
+		<div class="ui divider"></div>
+	</div>
+</div>
+<div class="ui page grid">
+	<?php if( have_rows('contact_section') ): ?>
+		<?php while( have_rows('contact_section') ): the_row(); 
+
+		// vars
+		$connectHeadline = get_sub_field('connect_headline');
+		$connectBody = get_sub_field('connect_body');
+
+		?>
+
+		
+		<div class="eight wide column">
+			<h3><?php echo $connectHeadline; ?></h3>
+			<p><?php echo $connectBody; ?></p>
+		</div>
+		
+	<?php endwhile; ?>
+<?php endif; ?>
+</div>
+
+<div class="ui page grid">
+	<div class="eight wide column">
+		<p><?php the_content(); ?></p>
+	</div>
+	<div class="eight wide column">
+	<div class="ui header"><?php the_field('contact_cta'); ?></div>
+		<div class="ui card">
+			<div class="content">
+				<p><?php the_field('contact_info'); ?></p>
+			</div>
+		</div>
+	</div>
 </div>
 
 
