@@ -16,7 +16,8 @@
 
 	<!-- 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
 	<!-- 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"> -->
-	<!-- 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" /> -->
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bootstrap.css" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" />
 	<!--	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bower_components/fullpage.js/jquery.fullpage.css" /> -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bower_components/semantic-ui/dist/semantic.min.css" />
 	
