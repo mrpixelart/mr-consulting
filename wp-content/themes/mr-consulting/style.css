@@ -26,7 +26,7 @@ Version: 0.1;
   margin-left: 20px;
 }
 .img-bump {
-  margin-top: 80px;
+  margin-top: 20px;
 }
 ::selection {
   background-color: #00b8b3;
@@ -74,6 +74,7 @@ a .inverse:hover {
 }
 h3 {
   font-size: 1.8rem;
+  color: #EDBC00;
 }
 p {
   font-size: 1.3rem;
@@ -141,7 +142,7 @@ nav {
   border-bottom: 1px solid #d2d4d2;
 }
 .hero-cta {
-  font-size: 4.4rem;
+  font-size: 4rem;
 }
 .center {
   text-align: center;
@@ -150,11 +151,18 @@ nav {
   font-size: 2.8rem;
   font-weight: 100;
 }
-.img-crop {
-  margin-bottom: -40px !important;
+.section-padding {
+  height: auto;
+  padding: 40px 0;
+}
+.list-padding {
+  padding: 20px 0;
 }
 .lead {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   line-height: 1.4;
   font-weight: 200;
+}
+.gold {
+  color: ;
 }
