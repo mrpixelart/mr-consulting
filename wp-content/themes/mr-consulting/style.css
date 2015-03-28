@@ -25,12 +25,15 @@ Version: 0.1;
 .bump-left {
   margin-left: 20px;
 }
+.img-bump {
+  margin-top: 80px;
+}
 ::selection {
-  background-color: #12a86f;
+  background-color: #00b8b3;
   color: #f1f1f1;
 }
 ::-moz-selection {
-  background-color: #12a86f;
+  background-color: #00b8b3;
   color: #f1f1f1;
 }
 .icon-1x {
@@ -46,12 +49,37 @@ Version: 0.1;
   font-size: 4em;
 }
 .btn-cta {
-  background-color: #12a86f;
+  background-color: #00b8b3;
   font-weight: 300;
   font-size: 1.4em;
 }
 .btn-cta:hover {
-  background-color: #0d7a51;
+  background-color: #008581;
+}
+a {
+  color: #00b8b3;
+  transition: 0.2s linear;
+}
+a:hover {
+  color: #005250;
+  transition: 0.2s linear;
+}
+a .inverse {
+  color: #026859;
+  transition: 0.2s linear;
+}
+a .inverse:hover {
+  color: #000403;
+  transition: 0.2s linear;
+}
+h3 {
+  font-size: 1.8rem;
+}
+p {
+  font-size: 1.3rem;
+}
+a {
+  font-size: 1.3rem;
 }
 .page-title {
   margin-top: 40px;
@@ -61,22 +89,43 @@ Version: 0.1;
 nav {
   height: 0;
   background: none;
-  color: #12a86f;
+  color: #00b8b3;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 .hero {
   height: auto;
-  padding: 60px 0;
+  padding: 80px 0;
   color: white;
 }
 .hero-image {
-  background: url('images/blvd.jpg');
+  background: url('images/hero.png');
   height: auto;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+.hero-image-2 {
+  background: url('images/collaboration.png');
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+.hero-image-3 {
+  background: url('images/build.png');
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+.hero-2 {
+  height: auto;
+  padding: 120px 0;
   color: white;
 }
 .hero-solid {
-  background: #12a86f;
+  background: #00b8b3;
 }
 .hero-overlay {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(69, 69, 67, 0.82)), to(rgba(2, 39, 21, 0.57)));
@@ -92,39 +141,20 @@ nav {
   border-bottom: 1px solid #d2d4d2;
 }
 .hero-cta {
-  font-size: 4rem;
+  font-size: 4.4rem;
 }
 .center {
   text-align: center;
 }
+.section-header {
+  font-size: 2.8rem;
+  font-weight: 100;
+}
+.img-crop {
+  margin-bottom: -40px !important;
+}
 .lead {
   font-size: 1.8rem;
-  line-height: 2.4;
-  font-weight: 300;
-}
-.icon-image {
-  background-color: #12a86f;
-  color: white;
-  padding: 30px 0;
-}
-.price-title {
-  font-size: 2em;
-}
-.card-description {
-  font-size: 1.2em;
-  line-height: 1.6;
-}
-.card-price {
-  font-size: 48px;
-  font-weight: 800;
-  color: #12a86f;
-}
-.section {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-.callout {
-  font-size: 2.5rem;
-  line-height: 1.5;
-  text-align: center;
+  line-height: 1.4;
+  font-weight: 200;
 }
