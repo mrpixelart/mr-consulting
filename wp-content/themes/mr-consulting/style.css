@@ -94,7 +94,7 @@ a .inverse:hover {
 }
 .header-main-menu li {
   display: inline;
-  padding-right: 20px;
+  padding-left: 40px;
 }
 .header-main-menu a {
   color: white;
@@ -122,11 +122,6 @@ p {
 a {
   font-size: 1.3rem;
 }
-.page-title {
-  margin-top: 40px;
-  max-width: 40%;
-  margin-left: -25px;
-}
 .hero {
   height: auto;
   padding: 160px 0 100px 0;
@@ -148,13 +143,12 @@ a {
   background-size: cover;
   background-position: center;
   color: white;
-  margin-top: -40px;
 }
 .hero-image-2 {
   background: url('images/collaboration.png');
   height: auto;
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
   color: white;
 }
 .hero-image-3 {
