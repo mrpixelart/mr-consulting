@@ -39,12 +39,7 @@
 <body <?php body_class(); ?>>
 	<div class="ui fixed inverted menu large">
 		<div class="container">
-			<a class="active item">
-				<i class="home icon"></i> Home
-			</a>
-			<a class="item">
-				<i class="mail icon"></i> Messages
-			</a>
+			<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 		</div>
 	</div>
 

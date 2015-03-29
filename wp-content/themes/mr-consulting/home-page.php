@@ -20,7 +20,7 @@ get_header();
 				<h1 class="hero-cta"><?php the_field('hero_headline'); ?></h1>
 				<div class="ui divider"></div>
 				<p class="lead gold"><?php the_field('hero_description'); ?></p>
-				<div class="huge ui inverted teal button "><?php the_field('hero_button'); ?></div>
+				<!-- <div class="huge ui inverted teal button "><?php the_field('hero_button'); ?></div> -->
 			</div>
 		</div>
 	</div>
@@ -173,8 +173,9 @@ get_header();
 			<div class="ui segment">
 				<div class="content">
 					<img class="ui image centered" src="<?php echo the_field('contact_image') ?>">
-					<h3 class="ui header notop"><?php the_field('contact_cta'); ?></h3>
+					<h3 class="ui header notop"><?php the_field('contact_title'); ?></h3>
 					<p><?php the_field('contact_info'); ?></p>
+					<a><?php the_field('contact_cta'); ?></a>
 				</div>
 			</div>
 		</div>
