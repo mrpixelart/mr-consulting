@@ -120,7 +120,7 @@ get_header();
 
 				<div class="row">
 					<div class="col-md-3 col-md-offset-2">
-						<img class="ui image img-bump" src="<?php echo $buildImage; ?>">
+						<img class="ui image centered img-bump" src="<?php echo $buildImage; ?>">
 					</div>
 					<div class="col-md-9">
 						<div class="list-padding">
@@ -166,13 +166,14 @@ get_header();
 
 	<div class="row">
 		<div class="col-md-8">
-			<p class="ui input"><?php the_content(); ?></p>
+			<p><?php the_content(); ?></p>
 		</div>
 
 		<div class="col-md-8 bump-top">
 			<div class="ui segment">
-				<h3 class="ui header"><?php the_field('contact_cta'); ?></h3>
 				<div class="content">
+					<img class="ui image centered" src="<?php echo the_field('contact_image') ?>">
+					<h3 class="ui header notop"><?php the_field('contact_cta'); ?></h3>
 					<p><?php the_field('contact_info'); ?></p>
 				</div>
 			</div>

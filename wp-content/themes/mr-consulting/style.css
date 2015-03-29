@@ -8,7 +8,7 @@ Template: twentyfifteen
 Version: 0.1;
 */
 .notop {
-  margin-top: 0;
+  margin-top: 0 !important;
 }
 .nobottom {
   margin-bottom: 0;
@@ -183,6 +183,7 @@ nav {
 .wpcf7 input[type="text"],
 .wpcf7 input[type="email"],
 .wpcf7 textarea {
+  width: 100%;
   margin: 0;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
