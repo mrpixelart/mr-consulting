@@ -61,20 +61,34 @@ a {
   transition: 0.2s linear;
 }
 a:hover {
-  color: #005250;
+  color: #008581;
   transition: 0.2s linear;
 }
 a .inverse {
-  color: #026859;
+  color: #ffa900;
   transition: 0.2s linear;
 }
 a .inverse:hover {
-  color: #000403;
+  color: #cc8700;
   transition: 0.2s linear;
+}
+.ui.inverted.teal.button,
+.ui.inverted.teal.buttons .button {
+  background-color: transparent;
+  box-shadow: 0 0 0 2px #00b8b3 inset !important;
+  color: #00b8b3;
+}
+.ui.inverted.teal.active.button,
+.ui.inverted.teal.button:hover,
+.ui.inverted.teal.buttons .active.button,
+.ui.inverted.teal.buttons .button:hover {
+  box-shadow: 0 0 0 2px #00b8b3 inset !important;
+  background-color: #00b8b3;
+  color: white;
 }
 h3 {
   font-size: 1.8rem;
-  color: #EDBC00;
+  color: #ffa900;
 }
 p {
   font-size: 1.3rem;
@@ -164,5 +178,42 @@ nav {
   font-weight: 200;
 }
 .gold {
-  color: ;
+  color: #ffa900;
+}
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea {
+  margin: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  outline: 0;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  text-align: left;
+  line-height: 1.2142em;
+  font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  padding: .67861em 1em;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  color: rgba(0, 0, 0, 0.8);
+  border-radius: .2857rem;
+  -webkit-transition: background-color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  box-shadow: none;
+}
+.wpcf7 input[type="text"]:active,
+.wpcf7 input[type="email"]:active,
+.wpcf7 textarea:active {
+  border-color: rgba(0, 0, 0, 0.3);
+  background: #fafafa;
+  color: rgba(0, 0, 0, 0.8);
+  box-shadow: none;
+}
+.wpcf7 input[type="text"]:focus,
+.wpcf7 input[type="email"]:focus,
+.wpcf7 textarea:focus {
+  border-color: #00b8b3;
+  color: rgba(0, 0, 0, 0.8);
+  box-shadow: none;
 }

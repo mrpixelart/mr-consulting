@@ -82,6 +82,18 @@ a {
 	}
 }
 
+.ui.inverted.teal.button, .ui.inverted.teal.buttons .button {
+	background-color: transparent;
+	box-shadow: 0 0 0 2px @brand-primary inset !important;
+	color: @brand-primary;
+}
+
+.ui.inverted.teal.active.button, .ui.inverted.teal.button:hover, .ui.inverted.teal.buttons .active.button, .ui.inverted.teal.buttons .button:hover {
+	box-shadow: 0 0 0 2px @brand-primary inset!important;
+	background-color: @brand-primary;
+	color: white;
+}
+
 // .btn {
 // 	border-width: 2px;
 // 	border-style: solid;

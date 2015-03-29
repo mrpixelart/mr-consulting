@@ -13,14 +13,13 @@ get_header();
 <div class="hero-image">
 	<div class="container">
 		<div class="row hero">
-
 			<div class="col-md-5 col-lg-5">
 				<img class="ui image " src="<?php the_field('hero_image'); ?>">
 			</div>
 			<div class="col-md-11 col-lg-11">
 				<h1 class="hero-cta"><?php the_field('hero_headline'); ?></h1>
 				<div class="ui divider"></div>
-				<p class="lead"><?php the_field('hero_description'); ?></p>
+				<p class="lead gold"><?php the_field('hero_description'); ?></p>
 				<div class="huge ui inverted teal button "><?php the_field('hero_button'); ?></div>
 			</div>
 		</div>
@@ -31,6 +30,7 @@ get_header();
 	<div class="row section-padding">
 		<div class="col-sm-16">
 			<h2 class="section-header center"><?php the_field('research_headline'); ?></h2>
+			<div class="ui divider"></div>
 		</div>
 
 		<?php if( have_rows('research_section') ): ?>
@@ -57,10 +57,14 @@ get_header();
 
 <div class="hero-image-2">
 	<div class="container">
-		<div class="hero-2">
-			<h2 class="hero-cta"><?php the_field('collaboration_headline'); ?></h2>
-			<div class="ui divider"></div>
-			<p class="lead"> <?php the_field('collaboration_body'); ?></p>
+		<div class="row">
+			<div class="col-md-14 col-md-offset-1">
+				<div class="hero-2">
+					<h2 class="hero-cta"><?php the_field('collaboration_headline'); ?></h2>
+					<div class="ui divider"></div>
+					<p class="lead"> <?php the_field('collaboration_body'); ?></p>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -138,7 +142,7 @@ get_header();
 	<div class="section-padding">
 		<h2 class="section-header center"><?php the_field('contact_headline'); ?></h2>
 		<div class="ui divider"></div>
-		
+
 		<div class="row">
 			<?php if( have_rows('contact_section') ): ?>
 				<?php while( have_rows('contact_section') ): the_row(); 
@@ -149,7 +153,7 @@ get_header();
 
 				?>
 
-				
+
 				<div class="col-md-8">
 					<h3><?php echo $connectHeadline; ?></h3>
 					<p><?php echo $connectBody; ?></p>
@@ -162,11 +166,12 @@ get_header();
 
 	<div class="row">
 		<div class="col-md-8">
-			<p><?php the_content(); ?></p>
+			<p class="ui input"><?php the_content(); ?></p>
 		</div>
-		<div class="col-md-8">
-			<div class="ui header"><?php the_field('contact_cta'); ?></div>
-			<div class="ui card">
+
+		<div class="col-md-8 bump-top">
+			<div class="ui segment">
+				<h3 class="ui header"><?php the_field('contact_cta'); ?></h3>
 				<div class="content">
 					<p><?php the_field('contact_info'); ?></p>
 				</div>
