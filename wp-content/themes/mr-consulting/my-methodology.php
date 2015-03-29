@@ -126,3 +126,121 @@ get_header();
 	</div>
 </div>
 </div>
+
+<div class="ui segment notop nobottom">
+	<div class="container">
+		<div class="row bump-top">
+			<div class="col-sm-16">
+				<h2 class="section-header center"><?php the_field('user_title'); ?></h2>
+				<div class="ui divider"></div>
+			</div>
+			<?php if( have_rows('user_section') ): ?>
+				<?php while( have_rows('user_section') ): the_row(); 
+
+			// vars
+				$userHeadline = get_sub_field('user_headline');
+				$userBody = get_sub_field('user_body');
+				$userImage = get_sub_field('user_image');
+				$userCta = get_sub_field('user_cta');
+
+				?>
+
+				<div class="col-sm-8">
+					<img class="ui image centered" src="<?php echo $userImage; ?>">
+					<h3><?php echo $userHeadline; ?></h3>
+					<p><?php echo $userBody; ?></p>
+					<a><?php echo $userCta; ?></a>
+				</div>
+			<?php endwhile; ?>
+		<?php endif; ?>
+
+		<div class="col-sm-16 bump-top">
+			<div class="ui divider"></div>
+			<h3 class="center"><?php the_field('user_feature_headline'); ?></h3>
+			<p class=""><?php the_field('user_feature_body'); ?></p>
+			<div class="center">
+				<a href="#" class="lead"><?php the_field('user_feature_cta'); ?></a>
+			</div>
+			<img class="ui image centered" src="<?php the_field('user_feature_image'); ?>">
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="container">
+	<div class="row bump-top">
+		<div class="col-sm-16">
+			<h2 class="section-header center"><?php the_field('architecture_title'); ?></h2>
+			<div class="ui divider"></div>
+		</div>
+		<?php if( have_rows('architecture_section') ): ?>
+			<?php while( have_rows('architecture_section') ): the_row(); 
+
+			// vars
+			$architectureHeadline = get_sub_field('architecture_headline');
+			$architectureBody = get_sub_field('architecture_body');
+			$architectureImage = get_sub_field('architecture_image');
+			$architectureCta = get_sub_field('architecture_cta');
+
+			?>
+
+			<div class="col-sm-8">
+				<img class="ui image centered" src="<?php echo $architectureImage; ?>">
+				<h3><?php echo $architectureHeadline; ?></h3>
+				<p><?php echo $architectureBody; ?></p>
+				<a><?php echo $architectureCta; ?></a>
+			</div>
+		<?php endwhile; ?>
+	<?php endif; ?>
+
+	<div class="col-sm-16 bump-top">
+		<div class="ui divider"></div>
+		<h3 class="center"><?php the_field('architecture_feature_headline'); ?></h3>
+		<p class=""><?php the_field('architecture_feature_body'); ?></p>
+		<div class="center">
+			<a href="#" class="lead"><?php the_field('architecture_feature_cta'); ?></a>
+		</div>
+		<img class="ui image centered" src="<?php the_field('architecture_feature_image'); ?>">
+	</div>
+</div>
+</div>
+
+<div class="ui segment notop nobottom">
+	<div class="container">
+		<div class="row bump-top">
+			<div class="col-sm-16">
+				<h2 class="section-header center"><?php the_field('design_title'); ?></h2>
+				<div class="ui divider"></div>
+			</div>
+			<?php if( have_rows('design_section') ): ?>
+				<?php while( have_rows('design_section') ): the_row(); 
+
+			// vars
+				$designHeadline = get_sub_field('design_headline');
+				$designBody = get_sub_field('design_body');
+				$designImage = get_sub_field('design_image');
+				$designCta = get_sub_field('design_cta');
+
+				?>
+
+				<div class="col-sm-8">
+					<img class="ui image centered" src="<?php echo $designImage; ?>">
+					<h3><?php echo $designHeadline; ?></h3>
+					<p><?php echo $designBody; ?></p>
+					<a><?php echo $designCta; ?></a>
+				</div>
+			<?php endwhile; ?>
+		<?php endif; ?>
+
+		<div class="col-sm-16 bump-top">
+			<div class="ui divider"></div>
+			<h3 class="center"><?php the_field('design_feature_headline'); ?></h3>
+			<p class=""><?php the_field('design_feature_body'); ?></p>
+			<div class="center">
+				<a href="#" class="lead"><?php the_field('design_feature_cta'); ?></a>
+			</div>
+			<img class="ui image centered" src="<?php the_field('design_feature_image'); ?>">
+		</div>
+	</div>
+</div>
+</div>
