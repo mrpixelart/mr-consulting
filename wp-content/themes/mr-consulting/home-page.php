@@ -99,7 +99,7 @@ get_header();
 </div>
 
 <div class="hero-image-3">
-	<div class="hero">
+	<div class="hero-3">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-16">
