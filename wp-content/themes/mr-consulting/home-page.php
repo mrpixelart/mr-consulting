@@ -58,7 +58,7 @@ get_header();
 <div class="hero-image-2">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-14 col-md-offset-1">
+			<div class="col-lg-14 col-lg-offset-1">
 				<div class="hero-2">
 					<h2 class="hero-cta"><?php the_field('collaboration_headline'); ?></h2>
 					<div class="ui divider"></div>

@@ -72,7 +72,6 @@ get_header();
 				$buildCta = get_sub_field('build_cta');
 
 				?>
-
 		
 					<div class="col-md-4">
 						<img class="ui image centered" src="<?php echo $buildImage; ?>">
