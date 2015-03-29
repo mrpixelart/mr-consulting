@@ -84,20 +84,6 @@ a .inverse:hover {
   color: #cc8700;
   transition: 0.2s linear;
 }
-.ui.inverted.teal.button,
-.ui.inverted.teal.buttons .button {
-  background-color: transparent;
-  box-shadow: 0 0 0 2px #00b8b3 inset !important;
-  color: #00b8b3;
-}
-.ui.inverted.teal.active.button,
-.ui.inverted.teal.button:hover,
-.ui.inverted.teal.buttons .active.button,
-.ui.inverted.teal.buttons .button:hover {
-  box-shadow: 0 0 0 2px #00b8b3 inset !important;
-  background-color: #00b8b3;
-  color: white;
-}
 .logo {
   margin: 10px 0;
   padding: 10px 0;
@@ -109,6 +95,15 @@ a .inverse:hover {
 .header-main-menu li {
   display: inline;
   padding-right: 20px;
+}
+.header-main-menu a {
+  color: white;
+}
+.header-main-menu a:hover {
+  color: #00b8b3;
+}
+.current-menu-item a {
+  color: #ffa900 !important;
 }
 .ui.menu {
   background-color: rgba(0, 0, 0, 0.7);

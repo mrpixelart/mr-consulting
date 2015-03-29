@@ -98,19 +98,6 @@ a {
 	}
 }
 
-.ui.inverted.teal.button, .ui.inverted.teal.buttons .button {
-	background-color: transparent;
-	box-shadow: 0 0 0 2px @brand-primary inset !important;
-	color: @brand-primary;
-}
-
-.ui.inverted.teal.active.button, .ui.inverted.teal.button:hover, .ui.inverted.teal.buttons .active.button, .ui.inverted.teal.buttons .button:hover {
-	box-shadow: 0 0 0 2px @brand-primary inset!important;
-	background-color: @brand-primary;
-	color: white;
-}
-
-
 //navigation
 .logo {
 	margin:10px 0;
@@ -124,9 +111,16 @@ a {
 		display: inline;
 		padding-right: 20px;
 	}
-	// a {
-	// 	color: white !important;
-	// }
+	a {
+		color: white;
+		&:hover {
+			color:@brand-primary;
+		}
+	}
+}
+
+.current-menu-item a {
+	color: @brand-secondary !important;
 }
 
 .ui.menu {
@@ -218,3 +212,14 @@ a {
 // }
 
 
+// .ui.inverted.teal.button, .ui.inverted.teal.buttons .button {
+// 	background-color: transparent;
+// 	box-shadow: 0 0 0 2px @brand-primary inset !important;
+// 	color: @brand-primary;
+// }
+
+// .ui.inverted.teal.active.button, .ui.inverted.teal.button:hover, .ui.inverted.teal.buttons .active.button, .ui.inverted.teal.buttons .button:hover {
+// 	box-shadow: 0 0 0 2px @brand-primary inset!important;
+// 	background-color: @brand-primary;
+// 	color: white;
+// }
