@@ -215,7 +215,7 @@ get_header();
 			<?php if( have_rows('design_section') ): ?>
 				<?php while( have_rows('design_section') ): the_row(); 
 
-			// vars
+				// vars
 				$designHeadline = get_sub_field('design_headline');
 				$designBody = get_sub_field('design_body');
 				$designImage = get_sub_field('design_image');
@@ -244,3 +244,4 @@ get_header();
 	</div>
 </div>
 </div>
+

@@ -51,3 +51,151 @@ get_header();
 	<?php endif; ?>
 </div>
 </div>
+
+<div class="hero-solid">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-16">
+				<div class="hero-2">
+					<h2 class="hero-cta"><?php the_field('collaboration_headline'); ?></h2>
+					<div class="ui divider"></div>
+					<p class="lead"> <?php the_field('collaboration_body'); ?></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row section-padding">
+		<div class="col-sm-16">
+			<h2 class="section-header center"><?php the_field('foundation_title'); ?></h2>
+			<div class="ui divider"></div>
+		</div>
+
+		<?php if( have_rows('foundation_section') ): ?>
+			<?php while( have_rows('foundation_section') ): the_row(); 
+
+			// vars
+			$foundationHeadline = get_sub_field('foundation_headline');
+			$foundationBody = get_sub_field('foundation_body');
+			$foundationImage = get_sub_field('foundation_image');
+			$foundationCta = get_sub_field('foundation_cta');
+
+			?>
+
+			<div class="col-md-8">
+				<img class="ui image centered" src="<?php echo $foundationImage; ?>">
+				<h3><?php echo $foundationHeadline; ?></h3>
+				<p><?php echo $foundationBody; ?></p>
+				<a class="" href=""><?php echo $foundationCta; ?></a>
+			</div>
+		<?php endwhile; ?>
+	<?php endif; ?>
+	<div class="col-sm-16">
+
+		<div class="ui segment bump-top">
+			<div class="col-md-6">
+				<img class="ui image " src="<?php the_field('foundation_job_image'); ?>">
+			</div>
+			<div class="col-md-10">
+				<h4 class="bump-top"><?php the_field('foundation_job_title'); ?></h4>
+				<div class="sub header"><?php the_field('foundation_job_date'); ?></div>
+				<div class="ui divider"></div>
+				<p><?php the_field('foundation_job_description'); ?></p>
+				<p class="description"><em><?php the_field('foundation_job_work'); ?></em></p>
+			</div>
+
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="container">
+	<div class="row section-padding">
+		<div class="col-sm-16">
+			<h2 class="section-header center"><?php the_field('growth_title'); ?></h2>
+			<div class="ui divider"></div>
+		</div>
+
+		<?php if( have_rows('growth_section') ): ?>
+			<?php while( have_rows('growth_section') ): the_row(); 
+
+			// vars
+			$growthHeadline = get_sub_field('growth_headline');
+			$growthBody = get_sub_field('growth_body');
+			$growthImage = get_sub_field('growth_image');
+			$growthCta = get_sub_field('growth_cta');
+
+			?>
+
+			<div class="col-md-8">
+				<img class="ui image centered" src="<?php echo $growthImage; ?>">
+				<h3><?php echo $growthHeadline; ?></h3>
+				<p><?php echo $growthBody; ?></p>
+				<a class="" href=""><?php echo $growthCta; ?></a>
+			</div>
+		<?php endwhile; ?>
+	<?php endif; ?>
+	<div class="col-sm-16">
+		<div class="ui segment bump-top">
+			<div class="col-md-6">
+				<img class="ui image " src="<?php the_field('growth_job_image'); ?>">
+			</div>
+			<div class="col-md-10">
+				<h4 class="bump-top"><?php the_field('growth_job_title'); ?></h4>
+				<div class="sub header"><?php the_field('growth_job_date'); ?></div>
+				<div class="ui divider"></div>
+				<p><?php the_field('growth_job_description'); ?></p>
+				<p class="description"><em><?php the_field('growth_job_work'); ?></em></p>
+			</div>
+
+		</div>
+	</div>
+</div>
+</div>
+
+<div class="container">
+	<div class="row section-padding">
+		<div class="col-sm-16">
+			<h2 class="section-header center"><?php the_field('leadership_title'); ?></h2>
+			<div class="ui divider"></div>
+		</div>
+
+		<?php if( have_rows('leadership_section') ): ?>
+			<?php while( have_rows('leadership_section') ): the_row(); 
+
+			// vars
+			$leadershipHeadline = get_sub_field('leadership_headline');
+			$leadershipBody = get_sub_field('leadership_body');
+			$leadershipImage = get_sub_field('leadership_image');
+			$leadershipCta = get_sub_field('leadership_cta');
+
+			?>
+
+			<div class="col-md-8">
+				<img class="ui image centered" src="<?php echo $leadershipImage; ?>">
+				<h3><?php echo $leadershipHeadline; ?></h3>
+				<p><?php echo $leadershipBody; ?></p>
+				<a class="" href=""><?php echo $leadershipCta; ?></a>
+			</div>
+		<?php endwhile; ?>
+	<?php endif; ?>
+	<div class="col-sm-16">
+		<div class="ui segment bump-top">
+			<div class="col-md-6">
+				<img class="ui image " src="<?php the_field('leadership_job_image'); ?>">
+			</div>
+			<div class="col-md-10">
+				<h4 class="bump-top"><?php the_field('leadership_job_title'); ?></h4>
+				<div class="sub header"><?php the_field('leadership_job_date'); ?></div>
+				<div class="ui divider"></div>
+				<p><?php the_field('leadership_job_description'); ?></p>
+				<p class="description"><em><?php the_field('leadership_job_work'); ?></em></p>
+			</div>
+
+		</div>
+	</div>
+</div>
+</div>
+

@@ -40,7 +40,7 @@
 
 	<div class="ui fixed menu">
 		<div class="container">
-			<div class="">
+			<div class="row">
 				<div class="col-md-6">
 					<div class="logo">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">Mitch Ray — UX Consulting</a>
