@@ -147,7 +147,7 @@ get_header();
 			<?php if( have_rows('contact_section') ): ?>
 				<?php while( have_rows('contact_section') ): the_row(); 
 
-		// vars
+				// vars
 				$connectHeadline = get_sub_field('connect_headline');
 				$connectBody = get_sub_field('connect_body');
 

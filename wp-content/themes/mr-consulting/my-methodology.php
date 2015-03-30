@@ -245,3 +245,48 @@ get_header();
 </div>
 </div>
 
+<div class="container">
+
+	<div class="section-padding">
+		<h2 class="section-header center"><?php the_field('contact_headline'); ?></h2>
+		<div class="ui divider"></div>
+
+		<div class="row">
+			<?php if( have_rows('contact_section') ): ?>
+				<?php while( have_rows('contact_section') ): the_row(); 
+
+				// vars
+				$connectHeadline = get_sub_field('connect_headline');
+				$connectBody = get_sub_field('connect_body');
+
+				?>
+
+
+				<div class="col-md-8">
+					<h3><?php echo $connectHeadline; ?></h3>
+					<p><?php echo $connectBody; ?></p>
+				</div>
+
+			<?php endwhile; ?>
+		<?php endif; ?>
+	</div>
+
+
+	<div class="row">
+		<div class="col-md-8">
+			<p><?php the_content(); ?></p>
+		</div>
+
+		<div class="col-md-8 bump-top">
+			<div class="ui segment">
+				<div class="content">
+					<img class="ui image centered" src="<?php echo the_field('contact_image') ?>">
+					<h3 class="ui header notop"><?php the_field('contact_title'); ?></h3>
+					<p><?php the_field('contact_info'); ?></p>
+					<a><?php the_field('contact_cta'); ?></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
