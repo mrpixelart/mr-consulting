@@ -10,7 +10,7 @@ get_header();
 
 ?>
 
-<div class="hero-image">
+<div class="hero-image" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/images/hero.png">
 	<div class="container">
 		<div class="row hero">
 			<div class="col-md-5 col-lg-5">
@@ -55,7 +55,7 @@ get_header();
 </div>
 </div>
 
-<div class="hero-image-2">
+<div class="hero-image" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/images/collaboration.png">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-14 col-lg-offset-1">
@@ -98,7 +98,7 @@ get_header();
 </div>
 </div>
 
-<div class="hero-image-3">
+<div class="hero-image" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/images/build.png">
 	<div class="hero-3">
 		<div class="container">
 			<div class="row">

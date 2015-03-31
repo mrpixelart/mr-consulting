@@ -10,7 +10,7 @@ get_header();
 
 ?>
 
-<div class="hero-image">
+<div class="hero-image" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/images/hero.png">
 	<div class="container">
 		<div class="row hero">
 			<div class="col-sm-16">
@@ -42,7 +42,7 @@ get_header();
 			?>
 
 			<div class="col-md-8">
-				<img class="ui image centered" src="<?php echo $researchImage; ?>">
+				<!-- <img class="ui image centered" src="<?php echo $researchImage; ?>"> -->
 				<h3><?php echo $researchHeadline; ?></h3>
 				<p><?php echo $researchBody; ?></p>
 				<a class="" href=""><?php echo $researchCta; ?></a>

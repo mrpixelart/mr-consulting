@@ -21,8 +21,9 @@
 	<!--	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bower_components/fullpage.js/jquery.fullpage.css" /> -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bower_components/semantic-ui/dist/semantic.min.css" />
 	
-	<!-- <script src="//code.jquery.com/jquery-1.11.2.min.js"></script> -->
-	<script src="<?php echo get_template_directory_uri(); ?>/bower_components/jquery/dist/jquery.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	<!-- <script src="<?php echo get_template_directory_uri(); ?>/bower_components/jquery/dist/jquery.js"></script> -->
+	<script src="<?php echo get_template_directory_uri(); ?>/bower_components/parallax.js/parallax.js"></script>
 	<!-- 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> -->
 	<!-- 	<script src="<?php echo get_template_directory_uri(); ?>/bower_components/fullpage.js/jquery.fullpage.js"></script> -->
 

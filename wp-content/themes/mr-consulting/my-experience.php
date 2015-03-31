@@ -10,7 +10,7 @@ get_header();
 
 ?>
 
-<div class="hero-image-2">
+<div class="hero-image" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/images/collaboration.png">
 	<div class="container">
 		<div class="row hero">
 			<div class="col-sm-16">
@@ -42,7 +42,7 @@ get_header();
 			?>
 
 			<div class="col-md-8">
-				<img class="ui image centered" src="<?php echo $researchImage; ?>">
+				<!-- 				<img class="ui image centered" src="<?php echo $researchImage; ?>"> -->
 				<h3><?php echo $researchHeadline; ?></h3>
 				<p><?php echo $researchBody; ?></p>
 				<a class="" href=""><?php echo $researchCta; ?></a>
@@ -85,7 +85,7 @@ get_header();
 			?>
 
 			<div class="col-md-8">
-				<img class="ui image centered" src="<?php echo $foundationImage; ?>">
+				<!-- <img class="ui image centered" src="<?php echo $foundationImage; ?>"> -->
 				<h3><?php echo $foundationHeadline; ?></h3>
 				<p><?php echo $foundationBody; ?></p>
 				<a class="" href=""><?php echo $foundationCta; ?></a>
@@ -130,7 +130,7 @@ get_header();
 			?>
 
 			<div class="col-md-8">
-				<img class="ui image centered" src="<?php echo $growthImage; ?>">
+				<!-- <img class="ui image centered" src="<?php echo $growthImage; ?>"> -->
 				<h3><?php echo $growthHeadline; ?></h3>
 				<p><?php echo $growthBody; ?></p>
 				<a class="" href=""><?php echo $growthCta; ?></a>
@@ -174,7 +174,7 @@ get_header();
 			?>
 
 			<div class="col-md-8">
-				<img class="ui image centered" src="<?php echo $leadershipImage; ?>">
+				<!-- <img class="ui image centered" src="<?php echo $leadershipImage; ?>"> -->
 				<h3><?php echo $leadershipHeadline; ?></h3>
 				<p><?php echo $leadershipBody; ?></p>
 				<a class="" href=""><?php echo $leadershipCta; ?></a>

@@ -145,22 +145,8 @@ a {
   color: white;
 }
 .hero-image {
-  background: url('images/hero.png');
   height: auto;
-  background-size: cover;
-  background-position: center;
-  color: white;
-}
-.hero-image-2 {
-  background: url('images/collaboration.png');
-  height: auto;
-  background-size: cover;
-  background-position: center bottom;
-  color: white;
-}
-.hero-image-3 {
-  background: url('images/build.png');
-  height: auto;
+  min-height: 400px;
   background-size: cover;
   background-position: center;
   color: white;
