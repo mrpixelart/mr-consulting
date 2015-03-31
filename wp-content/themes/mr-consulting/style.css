@@ -29,6 +29,9 @@ Version: 0.1;
 .img-bump {
   margin-top: 20px;
 }
+.img-spacer img {
+  margin: 0 .75rem .5rem !important;
+}
 .inline {
   display: inline;
 }
@@ -40,6 +43,9 @@ Version: 0.1;
 }
 .inverted-text {
   color: #fff !important;
+}
+.top-spacer {
+  margin-top: 20px !important;
 }
 ::selection {
   background-color: #00b8b3;

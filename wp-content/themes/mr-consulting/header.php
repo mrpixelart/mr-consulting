@@ -41,12 +41,12 @@
 	<div class="ui fixed menu">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-7">
 					<div class="logo">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">Mitch Ray — UX Consulting</a>
 					</div>
 				</div>
-				<div class="col-md-10 pull-right">
+				<div class="col-md-9 pull-right">
 					<a><?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'header-main-menu' ) ); ?></a>
 				</div>
 			</div>
