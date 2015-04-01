@@ -10,13 +10,13 @@ get_header();
 
 ?>
 
-<div class="hero-image" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/images/hero.png">
+<div class="hero-image-header" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/images/hero.png">
 	<div class="container">
 		<div class="row hero">
-			<div class="col-md-5 col-lg-5">
-				<img class="ui image " src="<?php the_field('hero_image'); ?>">
+			<div class="col-xs-16 col-md-6 col-lg-5">
+				<img class="ui image img-center" src="<?php the_field('hero_image'); ?>">
 			</div>
-			<div class="col-md-11 col-lg-11">
+			<div class="col-xs-16 col-md-10 col-lg-11">
 				<h1 class="hero-cta"><?php the_field('hero_headline'); ?></h1>
 				<div class="ui divider"></div>
 				<p class="lead gold"><?php the_field('hero_description'); ?></p>

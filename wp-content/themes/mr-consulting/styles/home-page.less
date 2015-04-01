@@ -16,10 +16,17 @@
 	color: white;
 }
 
-.hero-image {
+.hero-image-header {
 	// background: url('./images/hero.png');
+	// margin-top: -63px;
 	height: auto;
-	min-height: 400px;
+	background-size: cover;
+	background-position: center;
+	color: white;
+}
+
+.hero-image {
+	height: auto;
 	background-size: cover;
 	background-position: center;
 	color: white;
@@ -35,23 +42,10 @@
 	border-bottom: 1px solid @gray;
 }
 
-.hero-cta {
-	font-size: 3.9rem;
-}
-.hero-quote {
-
-}
 
 .center {
 	text-align: center;
 }
-
-
-.section-header {
-	font-size: 2.8rem;
-	font-weight: 100;
-}
-
 
 .section-padding {
 	height: auto;
@@ -60,12 +54,6 @@
 
 .list-padding {
 	padding: 20px 0;
-}
-
-.lead {
-	font-size: 1.6rem;
-	line-height: 1.6;
-	font-weight: 200;
 }
 
 .description {
@@ -111,3 +99,41 @@
 		box-shadow: none;
 	}
 }
+
+//mobile-only styles
+@media (max-width: 768px) {
+
+	/*Mobile typeface sizes*/
+	.hero {
+		height: auto;
+		padding: 80px 0 60px 0;
+		color: white;
+	}
+
+	.hero-2 {
+		height: auto;
+		padding: 80px 0;
+		color: white;
+	}
+	.img-responsive {
+		max-width: 24.5% !important;
+	}
+
+}
+
+//for tablet sizes
+@media (min-width: 768px) {
+	.img-responsive {
+		max-width: 26%;
+	}
+	//for nothing bigger than tablet
+	@media (max-width: 992px) {
+		ul#menu-main-menu {
+
+			li {
+				padding-left: 20px !important;
+			}
+		}
+	}
+}
+

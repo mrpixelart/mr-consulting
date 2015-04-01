@@ -14,20 +14,14 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 
-	<!-- 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
-	<!-- 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"> -->
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bootstrap.css" />
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" />
-	<!--	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bower_components/fullpage.js/jquery.fullpage.css" /> -->
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bower_components/Naver/jquery.fs.naver.css" >
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bower_components/semantic-ui/dist/semantic.min.css" />
-	
+
 	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-	<!-- <script src="<?php echo get_template_directory_uri(); ?>/bower_components/jquery/dist/jquery.js"></script> -->
+	<script src="<?php echo get_template_directory_uri(); ?>/bower_components/Naver/jquery.fs.naver.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/bower_components/parallax.js/parallax.js"></script>
-	<!-- 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> -->
-	<!-- 	<script src="<?php echo get_template_directory_uri(); ?>/bower_components/fullpage.js/jquery.fullpage.js"></script> -->
-
-
 
 	<!--[if lt IE 9]>
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
@@ -39,19 +33,31 @@
 
 <body <?php body_class(); ?>>
 
-	<div class="ui fixed menu">
+
+	<nav class="nav-background">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-7">
+				<div class="col-xs-16 col-sm-7 col-md-7 hidden-xs">
 					<div class="logo">
 						<a href="<?php echo esc_url( home_url( '/' ) ); ?>">Mitch Ray — UX Consulting</a>
 					</div>
 				</div>
-				<div class="col-md-9 pull-right">
-					<a><?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'header-main-menu' ) ); ?></a>
+				<div class="col-xs-16 col-sm-9 col-md-9 ">
+					<div class="pull-right hidden-xs">
+						<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'menu-main-menu' ) ); ?>
+					</div>
+					<div class="visible-xs center">
+						<ul class="no-left"><li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li></ul>
+
+						<?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'menu-main-menu' ) ); ?>
+					</div>
 				</div>
 			</div>
-		</div>
-	</div>
+		</div>	
+	</nav>
+	<script>
+		$("nav").naver();
+	</script>
+
 
 

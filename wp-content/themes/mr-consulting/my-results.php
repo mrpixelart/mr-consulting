@@ -10,7 +10,7 @@ get_header();
 
 ?>
 
-<div class="hero-image" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/images/build.png">
+<div class="hero-image-header" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/images/build.png">
 	<div class="container">
 		<div class="row hero">
 			<div class="col-sm-16">
@@ -74,7 +74,7 @@ get_header();
 					$toolImage = get_sub_field('tool_image');
 
 					?>
-					<img class="" src="<?php echo $toolImage ?>">
+					<img class="img-responsive" src="<?php echo $toolImage ?>">
 
 				<?php endwhile; ?>
 			<?php endif; ?>
@@ -134,7 +134,7 @@ get_header();
 					$franchiseToolImage = get_sub_field('franchise_tool_image');
 
 					?>
-					<img class="" src="<?php echo $franchiseToolImage ?>">
+					<img class="img-responsive" src="<?php echo $franchiseToolImage ?>">
 
 				<?php endwhile; ?>
 			<?php endif; ?>
@@ -194,7 +194,7 @@ get_header();
 					$slotsToolImage = get_sub_field('slots_tool_image');
 
 					?>
-					<img class="" src="<?php echo $slotsToolImage ?>">
+					<img class="img-responsive" src="<?php echo $slotsToolImage ?>">
 
 				<?php endwhile; ?>
 			<?php endif; ?>
