@@ -10,7 +10,8 @@ get_header();
 
 ?>
 
-<div class="hero-image-header" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/images/hero.png">
+<div class="hero-image-header" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/images/hero.png" data-over-scroll-fix=
+"true">
 	<div class="container">
 		<div class="row hero">
 			<div class="col-xs-16 col-md-6 col-lg-5">
