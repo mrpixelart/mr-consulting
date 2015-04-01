@@ -16,10 +16,12 @@
 
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bootstrap.css" />
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" />
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bower_components/magnific-popup/dist/magnific-popup.css" >
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bower_components/Naver/jquery.fs.naver.css" >
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bower_components/semantic-ui/dist/semantic.min.css" />
 
 	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/bower_components/Naver/jquery.fs.naver.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/bower_components/parallax.js/parallax.js"></script>
 

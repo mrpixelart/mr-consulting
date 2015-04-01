@@ -41,11 +41,11 @@ get_header();
 
 			?>
 
-			<div class="col-md-8">
+			<div class="col-sm-8">
 				<!-- <img class="ui image centered" src="<?php echo $researchImage; ?>"> -->
 				<h3><?php echo $researchHeadline; ?></h3>
 				<p><?php echo $researchBody; ?></p>
-				<a class="" href=""><?php echo $researchCta; ?></a>
+				<!-- 			<a class="" href=""><?php echo $researchCta; ?></a> -->
 			</div>
 		<?php endwhile; ?>
 	<?php endif; ?>
@@ -65,7 +65,7 @@ get_header();
 				<?php if( have_rows('build_section') ): ?>
 					<?php while( have_rows('build_section') ): the_row(); 
 
-			// vars
+					// vars
 					$buildHeadline = get_sub_field('build_headline');
 					$buildBody = get_sub_field('build_body');
 					$buildImage = get_sub_field('build_image');
@@ -73,12 +73,12 @@ get_header();
 
 					?>
 
-					<div class="col-md-4">
+					<div class="col-sm-8 col-md-4">
 						<img class="ui image centered" src="<?php echo $buildImage; ?>">
 						<div class="list-padding">
 							<h4 class="inverted-text center"><?php echo $buildHeadline; ?></h4>
 							<p><?php echo $buildBody; ?></p>
-							<a class="" href=""><?php echo $buildCta; ?></a>
+							<!-- 			<a class="" href=""><?php echo $buildCta; ?></a> -->
 						</div>
 					</div>
 
@@ -110,7 +110,7 @@ get_header();
 				<img class="ui image centered" src="<?php echo $strategyImage; ?>">
 				<h3><?php echo $strategyHeadline; ?></h3>
 				<p><?php echo $strategyBody; ?></p>
-				<a><?php echo $strategyCta; ?></a>
+				<a class="image-popup-vertical-fit" title="Business Model Canvas created for x project." href="<?php echo get_template_directory_uri(); ?>/images/hero.png"><?php echo $strategyCta; ?></a>
 			</div>
 		<?php endwhile; ?>
 	<?php endif; ?>
@@ -290,3 +290,42 @@ get_header();
 	</div>
 </div>
 </div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		$('.image-popup-vertical-fit').magnificPopup({
+			type: 'image',
+			closeOnContentClick: true,
+			mainClass: 'mfp-img-mobile',
+			image: {
+				verticalFit: true
+			}
+
+		});
+
+		$('.image-popup-fit-width').magnificPopup({
+			type: 'image',
+			closeOnContentClick: true,
+			image: {
+				verticalFit: false
+			}
+		});
+
+		$('.image-popup-no-margins').magnificPopup({
+			type: 'image',
+			closeOnContentClick: true,
+			closeBtnInside: false,
+			fixedContentPos: true,
+		mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+		image: {
+			verticalFit: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300 // don't foget to change the duration also in CSS
+		}
+	});
+
+	});
+</script>
