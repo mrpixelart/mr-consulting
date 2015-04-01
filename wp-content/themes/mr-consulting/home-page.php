@@ -41,6 +41,7 @@ get_header();
 			$researchBody = get_sub_field('section_body');
 			$researchImage = get_sub_field('section_image');
 			$researchCta = get_sub_field('section_cta');
+			$researchLink = get_sub_field('section_link');
 
 			?>
 
@@ -48,7 +49,7 @@ get_header();
 				<img class="ui image centered" src="<?php echo $researchImage; ?>">
 				<h3><?php echo $researchHeadline; ?></h3>
 				<p><?php echo $researchBody; ?></p>
-				<a class="" href=""><?php echo $researchCta; ?></a>
+				<a class="" href="<?php echo $researchLink; ?>"><?php echo $researchCta; ?></a>
 			</div>
 		<?php endwhile; ?>
 	<?php endif; ?>
@@ -92,7 +93,7 @@ get_header();
 	<?php endif; ?>
 
 	<div class="col-sm-16 center bump-top">
-		<a href="#" class="lead"><?php the_field('planning_cta'); ?></a>
+		<a href="<?php the_field('planning_link'); ?>" class="lead"><?php the_field('planning_cta'); ?></a>
 		<img class="ui image" src="<?php the_field('planning_image'); ?>">
 	</div>
 </div>
@@ -115,6 +116,7 @@ get_header();
 				$buildBody = get_sub_field('build_body');
 				$buildImage = get_sub_field('build_image');
 				$buildCta = get_sub_field('build_cta');
+				$buildLink = get_sub_field('build_link');
 
 				?>
 
@@ -126,7 +128,7 @@ get_header();
 						<div class="list-padding">
 							<h3 class="gold"><?php echo $buildHeadline; ?></h3>
 							<p><?php echo $buildBody; ?></p>
-							<a class="" href=""><?php echo $buildCta; ?></a>
+							<a class="" href="<?php echo $buildLink; ?>"><?php echo $buildCta; ?></a>
 						</div>
 					</div>
 				</div>

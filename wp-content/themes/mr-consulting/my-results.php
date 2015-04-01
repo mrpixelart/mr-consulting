@@ -66,7 +66,7 @@ get_header();
 			<h3 class="bump-top">My Role</h3>
 			<p><?php the_field('perfect_hair_role'); ?></p>
 			<p><?php the_field('perfect_hair_methods'); ?></p>
-			<h3 class="">Tools/Frameworks</h3>
+			<h3 class="">Tools Used</h3>
 			<div class="ui tiny images img-spacer">
 				<?php if( have_rows('perfect_hair_tools') ): ?>
 					<?php while( have_rows('perfect_hair_tools') ): the_row(); 
@@ -126,7 +126,7 @@ get_header();
 			<h3 class="bump-top">My Role</h3>
 			<p><?php the_field('franchise_role'); ?></p>
 			<p><?php the_field('franchise_methods'); ?></p>
-			<h3 class="">Tools/Frameworks</h3>
+			<h3 class="">Tools Used</h3>
 			<div class="ui tiny images img-spacer">
 				<?php if( have_rows('franchise_tools') ): ?>
 					<?php while( have_rows('franchise_tools') ): the_row(); 
@@ -186,7 +186,7 @@ get_header();
 			<h3 class="bump-top">My Role</h3>
 			<p><?php the_field('slots_role'); ?></p>
 			<p><?php the_field('slots_methods'); ?></p>
-			<h3 class="">Tools/Frameworks</h3>
+			<h3 class="">Tools Used</h3>
 			<div class="ui tiny images img-spacer">
 				<?php if( have_rows('slots_tools') ): ?>
 					<?php while( have_rows('slots_tools') ): the_row(); 

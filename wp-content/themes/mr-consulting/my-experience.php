@@ -41,7 +41,7 @@ get_header();
 
 			?>
 
-			<div class="col-md-8">
+			<div class="col-sm-8">
 				<!-- 				<img class="ui image centered" src="<?php echo $researchImage; ?>"> -->
 				<h3><?php echo $researchHeadline; ?></h3>
 				<p><?php echo $researchBody; ?></p>
@@ -84,7 +84,7 @@ get_header();
 
 			?>
 
-			<div class="col-md-8">
+			<div class="col-sm-8">
 				<!-- <img class="ui image centered" src="<?php echo $foundationImage; ?>"> -->
 				<h3><?php echo $foundationHeadline; ?></h3>
 				<p><?php echo $foundationBody; ?></p>
@@ -96,7 +96,7 @@ get_header();
 
 		<div class="ui segment bump-top">
 			<div class="col-md-6">
-				<img class="ui image " src="<?php the_field('foundation_job_image'); ?>">
+				<img class="ui image img-center" src="<?php the_field('foundation_job_image'); ?>">
 			</div>
 			<div class="col-md-10">
 				<h4 class="bump-top"><?php the_field('foundation_job_title'); ?></h4>
@@ -129,7 +129,7 @@ get_header();
 
 			?>
 
-			<div class="col-md-8">
+			<div class="col-sm-8">
 				<!-- <img class="ui image centered" src="<?php echo $growthImage; ?>"> -->
 				<h3><?php echo $growthHeadline; ?></h3>
 				<p><?php echo $growthBody; ?></p>
@@ -139,8 +139,8 @@ get_header();
 	<?php endif; ?>
 	<div class="col-sm-16">
 		<div class="ui segment bump-top">
-			<div class="col-md-6">
-				<img class="ui image " src="<?php the_field('growth_job_image'); ?>">
+			<div class="col-sm-16 col-md-6 ">
+				<img class="ui image img-center" src="<?php the_field('growth_job_image'); ?>">
 			</div>
 			<div class="col-md-10">
 				<h4 class="bump-top"><?php the_field('growth_job_title'); ?></h4>
@@ -173,7 +173,7 @@ get_header();
 
 			?>
 
-			<div class="col-md-8">
+			<div class="col-sm-8">
 				<!-- <img class="ui image centered" src="<?php echo $leadershipImage; ?>"> -->
 				<h3><?php echo $leadershipHeadline; ?></h3>
 				<p><?php echo $leadershipBody; ?></p>
@@ -184,7 +184,7 @@ get_header();
 	<div class="col-sm-16">
 		<div class="ui segment bump-top">
 			<div class="col-md-6">
-				<img class="ui image " src="<?php the_field('leadership_job_image'); ?>">
+				<img class="ui image img-center" src="<?php the_field('leadership_job_image'); ?>">
 			</div>
 			<div class="col-md-10">
 				<h4 class="bump-top"><?php the_field('leadership_job_title'); ?></h4>
