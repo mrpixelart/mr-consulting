@@ -44,21 +44,23 @@ get_header();
 			<img class="ui image centered" src="<?php the_field('perfect_hair_image'); ?>">
 		</div>
 		<div class="col-sm-16 col-md-10">
-			<div class="ui segment bump-top row">
-				<div class="col-md-8">
-					<h3 class="ui header top-spacer">User Needs</h3>
-					<p><?php the_field('perfect_hair_needs'); ?></p>
-				</div>
+			<div class="ui segment bump-top ">
+				<div class="row">
+					<div class="col-md-8">
+						<h3 class="ui header ">User Needs</h3>
+						<p><?php the_field('perfect_hair_needs'); ?></p>
+					</div>
 
-				<div class="col-md-8">
-					<h3 class="ui header top-spacer">Business Goals</h3>
-					<p><?php the_field('perfect_hair_goals'); ?></p>
-				</div>
+					<div class="col-md-8">
+						<h3 class="ui header ">Business Goals</h3>
+						<p><?php the_field('perfect_hair_goals'); ?></p>
+					</div>
 
-				<div class="col-sm-16">
-					<div class="ui divider"></div>
-					<h3 class="ui header">The Solution</h3>
-					<p><?php the_field('perfect_hair_solution'); ?></p>
+					<div class="col-sm-16">
+						<div class="ui divider"></div>
+						<h3 class="ui header notop">The Solution</h3>
+						<p><?php the_field('perfect_hair_solution'); ?></p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -104,21 +106,23 @@ get_header();
 			<img class="ui image centered" src="<?php the_field('franchise_image'); ?>">
 		</div>
 		<div class="col-sm-16 col-md-10">
-			<div class="ui segment bump-top row">
-				<div class="col-md-8">
-					<h3 class="ui header top-spacer">User Needs</h3>
-					<p><?php the_field('franchise_needs'); ?></p>
-				</div>
+			<div class="ui segment bump-top">
+				<div class="row">
+					<div class="col-md-8">
+						<h3 class="ui header ">User Needs</h3>
+						<p><?php the_field('franchise_needs'); ?></p>
+					</div>
 
-				<div class="col-md-8">
-					<h3 class="ui header top-spacer">Business Goals</h3>
-					<p><?php the_field('franchise_goals'); ?></p>
-				</div>
+					<div class="col-md-8">
+						<h3 class="ui header ">Business Goals</h3>
+						<p><?php the_field('franchise_goals'); ?></p>
+					</div>
 
-				<div class="col-sm-16">
-					<div class="ui divider"></div>
-					<h3 class="ui header">The Solution</h3>
-					<p><?php the_field('franchise_solution'); ?></p>
+					<div class="col-sm-16">
+						<div class="ui divider"></div>
+						<h3 class="ui header notop">The Solution</h3>
+						<p><?php the_field('franchise_solution'); ?></p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -164,21 +168,23 @@ get_header();
 			<img class="ui image centered" src="<?php the_field('slots_image'); ?>">
 		</div>
 		<div class="col-sm-16 col-md-10">
-			<div class="ui segment bump-top row">
-				<div class="col-md-8">
-					<h3 class="ui header top-spacer">User Needs</h3>
-					<p><?php the_field('slots_needs'); ?></p>
-				</div>
+			<div class="ui segment bump-top ">
+				<div class="row">
+					<div class="col-md-8">
+						<h3 class="ui header">User Needs</h3>
+						<p><?php the_field('slots_needs'); ?></p>
+					</div>
 
-				<div class="col-md-8">
-					<h3 class="ui header top-spacer">Business Goals</h3>
-					<p><?php the_field('slots_goals'); ?></p>
-				</div>
+					<div class="col-md-8">
+						<h3 class="ui header">Business Goals</h3>
+						<p><?php the_field('slots_goals'); ?></p>
+					</div>
 
-				<div class="col-sm-16">
-					<div class="ui divider"></div>
-					<h3 class="ui header">The Solution</h3>
-					<p><?php the_field('slots_solution'); ?></p>
+					<div class="col-sm-16">
+						<div class="ui divider"></div>
+						<h3 class="ui header notop">The Solution</h3>
+						<p><?php the_field('slots_solution'); ?></p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -241,11 +247,14 @@ get_header();
 					<img class="ui image centered" src="<?php echo the_field('contact_image') ?>">
 					<h3 class="ui header notop"><?php the_field('contact_title'); ?></h3>
 					<p><?php the_field('contact_info'); ?></p>
-					<a><?php the_field('contact_cta'); ?></a>
+					<div class="center">
+						<a class="btn btn-4 btn-4a icon-arrow-right"><?php the_field('contact_cta'); ?></a>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 </div>
+<?php get_footer(); ?>
 

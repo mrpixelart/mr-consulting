@@ -237,11 +237,10 @@ get_header();
 					<img class="ui image centered" src="<?php echo the_field('contact_image') ?>">
 					<h3 class="ui header notop"><?php the_field('contact_title'); ?></h3>
 					<p><?php the_field('contact_info'); ?></p>
-					<a><?php the_field('contact_cta'); ?></a>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 </div>
-
+<?php get_footer(); ?>
