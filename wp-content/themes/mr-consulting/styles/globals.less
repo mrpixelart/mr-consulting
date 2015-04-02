@@ -169,14 +169,11 @@ ul#menu-main-menu {
 	-webkit-transform: translateZ(0);
 }
 
-.admin-bar-fix + .nav-background {
-	margin-top: 32px;
-}
+
 
 li {
 	list-style: none;
 }
-
 
 
 //for tablet sizes
@@ -201,6 +198,15 @@ li {
 			}
 		}
 	}
+}
+
+
+
+//For desktop (large) sizes
+@media(min-width:1200px){
+	.admin-bar-fix + .nav-background {
+		margin-top: 32px;
+	}	
 }
 
 

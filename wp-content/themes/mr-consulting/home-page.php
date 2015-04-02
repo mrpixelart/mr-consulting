@@ -178,7 +178,7 @@ get_header();
 					<h3 class="ui header notop"><?php the_field('contact_title'); ?></h3>
 					<p><?php the_field('contact_info'); ?></p>
 					<div class="center">
-					<a class="btn btn-4 btn-4a icon-arrow-right"><?php the_field('contact_cta'); ?></a>
+					<a class="btn btn-4 btn-4a icon-arrow-right" href="<?php the_field('contact_link'); ?>"><?php the_field('contact_cta'); ?></a>
 					</div>
 				</div>
 			</div>

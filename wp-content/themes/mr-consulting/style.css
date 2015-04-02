@@ -141,9 +141,6 @@ ul#menu-main-menu a:hover {
   z-index: 500;
   -webkit-transform: translateZ(0);
 }
-.admin-bar-fix + .nav-background {
-  margin-top: 32px;
-}
 li {
   list-style: none;
 }
@@ -158,6 +155,11 @@ li {
   }
   .logo a:hover {
     color: #008581;
+  }
+}
+@media (min-width: 1200px) {
+  .admin-bar-fix + .nav-background {
+    margin-top: 32px;
   }
 }
 body {
@@ -456,6 +458,28 @@ a.btn-4b:hover:before {
   border-color: #00b8b3;
   color: rgba(0, 0, 0, 0.8);
   box-shadow: none;
+}
+.wpcf7-not-valid {
+  border: 1px solid red !important;
+  background-color: #F2D7D7 !important;
+}
+div.wpcf7-mail-sent-ok {
+  color: white;
+  background: #00b8b3;
+  border: 0;
+  border-radius: 12px;
+  padding: 15px;
+  font-size: 1.3rem;
+  margin: 0;
+}
+div.wpcf7-validation-errors {
+  color: white;
+  background: #ffa900;
+  border: 0;
+  border-radius: 12px;
+  padding: 15px;
+  font-size: 1.3rem;
+  margin: 0;
 }
 @media (max-width: 768px) {
   /*Mobile typeface sizes*/
