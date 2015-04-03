@@ -164,7 +164,7 @@ get_header();
 			<h3 class="center"><?php the_field('user_feature_headline'); ?></h3>
 			<p class=""><?php the_field('user_feature_body'); ?></p>
 			<div class="center">
-				<a class="image-popup-vertical-fit lead" href="<?php the_field('user_featured_sample'); ?>"><?php the_field('user_feature_cta'); ?></a>
+				<a class="image-popup-vertical-fit lead" title="<?php the_field('user_featured_subtitle'); ?>" href="<?php the_field('user_featured_sample'); ?>"><?php the_field('user_feature_cta'); ?></a>
 
 			</div>
 			<img class="ui image centered" src="<?php the_field('user_feature_image'); ?>">
