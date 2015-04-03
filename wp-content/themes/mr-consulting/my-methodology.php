@@ -89,7 +89,7 @@ get_header();
 </div>
 </div>
 
-<div class="container">
+<div id="bmc" class="container">
 	<div class="row bump-top">
 		<div class="col-sm-16">
 			<h2 class="section-header center"><?php the_field('strategy_title'); ?></h2>
@@ -124,13 +124,13 @@ get_header();
 		<div class="center">
 			<a href="<?php the_field('strategy_feature_sample'); ?>" target="_blank" class="lead"><?php the_field('strategy_feature_cta'); ?></a>
 		</div>
-		<img class="ui image centered" src="<?php the_field('strategy_feature_image'); ?>">
+		<a href="<?php the_field('strategy_feature_sample'); ?>" target="_blank"><img class="ui image centered" src="<?php the_field('strategy_feature_image'); ?>"></a>
 	</div>
 </div>
 </div>
 
 <div class="ui segment notop nobottom">
-	<div class="container">
+	<div id="persona" class="container">
 		<div class="row bump-top">
 			<div class="col-sm-16">
 				<h2 class="section-header center"><?php the_field('user_title'); ?></h2>
@@ -167,7 +167,7 @@ get_header();
 				<a class="image-popup-vertical-fit lead" title="<?php the_field('user_featured_subtitle'); ?>" href="<?php the_field('user_featured_sample'); ?>"><?php the_field('user_feature_cta'); ?></a>
 
 			</div>
-			<img class="ui image centered" src="<?php the_field('user_feature_image'); ?>">
+			<a class="image-popup-vertical-fit" title="<?php the_field('user_featured_subtitle'); ?>" href="<?php the_field('user_featured_sample'); ?>"><img class="ui image centered" src="<?php the_field('user_feature_image'); ?>"></a>
 
 		</div>
 	</div>
@@ -208,9 +208,9 @@ get_header();
 		<h3 class="center"><?php the_field('architecture_feature_headline'); ?></h3>
 		<p class=""><?php the_field('architecture_feature_body'); ?></p>
 		<div class="center">
-			<a class="image-popup-vertical-fit lead" href="<?php the_field('architecture_feature_sample'); ?>"><?php the_field('architecture_feature_cta'); ?></a>
+			<a class="image-popup-vertical-fit lead" title="Data models created to represent relationships between each piece of a franchise." href="<?php the_field('architecture_feature_sample'); ?>"><?php the_field('architecture_feature_cta'); ?></a>
 		</div>
-		<img class="ui image centered" src="<?php the_field('architecture_feature_image'); ?>">
+		<a class="image-popup-vertical-fit" title="Data models created to represent relationships between each piece of a franchise." href="<?php the_field('architecture_feature_sample'); ?>"><img class="ui image centered"  src="<?php the_field('architecture_feature_image'); ?>"></a>
 	</div>
 </div>
 </div>
@@ -251,7 +251,7 @@ get_header();
 			<div class="center">
 				<a class="" href="<?php the_field('design_feature_sample'); ?>"><?php the_field('design_feature_cta'); ?></a>
 			</div>
-			<img class="ui image centered" src="<?php the_field('design_feature_image'); ?>">
+			<a class="" href="<?php the_field('design_feature_sample'); ?>"><img class="ui image centered" src="<?php the_field('design_feature_image'); ?>"></a>
 		</div>
 	</div>
 </div>

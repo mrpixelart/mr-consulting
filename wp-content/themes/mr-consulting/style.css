@@ -93,6 +93,9 @@ a:hover {
   color: #008581;
   transition: 0.2s linear;
 }
+a:focus {
+  outline: 0;
+}
 a .inverse {
   color: #ffa900;
   transition: 0.2s linear;
@@ -143,6 +146,11 @@ ul#menu-main-menu a:hover {
 }
 li {
   list-style: none;
+}
+@media (max-width: 768px) {
+  .mobile-bump {
+    margin-top: 20px !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   ul#menu-main-menu li {

@@ -23,7 +23,7 @@ get_header();
 	</div>
 </div>
 
-<div class="container">
+<div id="perfect-hair" class="container">
 	<div class="row section-padding">
 		<div class="col-sm-16">
 			<h2 class="section-header center"><?php the_field('perfect_hair_title'); ?></h2>
@@ -53,7 +53,7 @@ get_header();
 					</div>
 
 					<div class="col-md-8">
-						<h3 class="ui header ">Business Goals</h3>
+						<h3 class="ui header mobile-bump">Business Goals</h3>
 						<p><?php the_field('perfect_hair_goals'); ?></p>
 					</div>
 
@@ -86,7 +86,7 @@ get_header();
 </div>
 </div>
 
-<div class="container">
+<div id="franchise" class="container">
 	<div class="row section-padding">
 		<div class="col-sm-16">
 			<h2 class="section-header center"><?php the_field('franchise_title'); ?></h2>
@@ -116,7 +116,7 @@ get_header();
 					</div>
 
 					<div class="col-md-8">
-						<h3 class="ui header ">Business Goals</h3>
+						<h3 class="ui header mobile-bump">Business Goals</h3>
 						<p><?php the_field('franchise_goals'); ?></p>
 					</div>
 
@@ -149,7 +149,7 @@ get_header();
 </div>
 </div>
 
-<div class="container">
+<div id="bird-slots" class="container">
 	<div class="row section-padding">
 		<div class="col-sm-16">
 			<h2 class="section-header center"><?php the_field('slots_title'); ?></h2>
@@ -179,7 +179,7 @@ get_header();
 					</div>
 
 					<div class="col-md-8">
-						<h3 class="ui header">Business Goals</h3>
+						<h3 class="ui header mobile-bump">Business Goals</h3>
 						<p><?php the_field('slots_goals'); ?></p>
 					</div>
 

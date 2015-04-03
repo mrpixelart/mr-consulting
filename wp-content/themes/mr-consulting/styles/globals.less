@@ -111,6 +111,10 @@ a {
 		transition: @transition;
 	}
 
+	&:focus {
+		outline: 0;
+	}
+
 	.inverse {
 		color: @link-inverse;
 		transition: @transition;
@@ -173,6 +177,13 @@ ul#menu-main-menu {
 
 li {
 	list-style: none;
+}
+
+//mobile-only styles
+@media (max-width: 768px) {
+	.mobile-bump {
+		margin-top: 20px !important;
+	}
 }
 
 

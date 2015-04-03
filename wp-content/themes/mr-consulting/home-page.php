@@ -42,6 +42,7 @@ get_header();
 			$researchImage = get_sub_field('section_image');
 			$researchCta = get_sub_field('section_cta');
 			$researchLink = get_sub_field('section_link');
+			$researchAnchor = get_sub_field('section_anchor');
 
 			?>
 
@@ -49,7 +50,7 @@ get_header();
 				<img class="ui image centered" src="<?php echo $researchImage; ?>">
 				<h3><?php echo $researchHeadline; ?></h3>
 				<p><?php echo $researchBody; ?></p>
-				<a class="" href="<?php echo $researchLink; ?>"><?php echo $researchCta; ?></a>
+				<a class="" href="<?php echo $researchLink; ?><?php echo $researchAnchor; ?>"><?php echo $researchCta; ?></a>
 			</div>
 		<?php endwhile; ?>
 	<?php endif; ?>
@@ -117,6 +118,7 @@ get_header();
 				$buildImage = get_sub_field('build_image');
 				$buildCta = get_sub_field('build_cta');
 				$buildLink = get_sub_field('build_link');
+				$buildAnchor = get_sub_field('build_anchor');
 
 				?>
 
@@ -128,7 +130,7 @@ get_header();
 						<div class="list-padding">
 							<h3 class="gold"><?php echo $buildHeadline; ?></h3>
 							<p><?php echo $buildBody; ?></p>
-							<a class="" href="<?php echo $buildLink; ?>"><?php echo $buildCta; ?></a>
+							<a class="" href="<?php echo $buildLink; ?>/<?php echo $buildAnchor; ?>"><?php echo $buildCta; ?></a>
 						</div>
 					</div>
 				</div>
@@ -178,7 +180,7 @@ get_header();
 					<h3 class="ui header notop"><?php the_field('contact_title'); ?></h3>
 					<p><?php the_field('contact_info'); ?></p>
 					<div class="center">
-					<a class="btn btn-4 btn-4a icon-arrow-right" href="<?php the_field('contact_link'); ?>"><?php the_field('contact_cta'); ?></a>
+						<a class="btn btn-4 btn-4a icon-arrow-right" href="<?php the_field('contact_link'); ?>"><?php the_field('contact_cta'); ?></a>
 					</div>
 				</div>
 			</div>
