@@ -41,7 +41,8 @@ get_header();
 
 
 		<div class="col-sm-16">
-			<img class="ui image centered" src="<?php the_field('perfect_hair_image'); ?>">
+			<img class="ui image centered hidden-xs" src="<?php the_field('perfect_hair_image'); ?>">
+			<img class="ui image centered visible-xs" src="<?php the_field('perfect_hair_image_2'); ?>">
 		</div>
 		<div class="col-sm-16 col-md-10">
 			<div class="ui segment bump-top ">
@@ -103,7 +104,8 @@ get_header();
 		
 		
 		<div class="col-sm-16">
-			<img class="ui image centered" src="<?php the_field('franchise_image'); ?>">
+			<img class="ui image centered hidden-xs" src="<?php the_field('franchise_image'); ?>">
+			<img class="ui image centered visible-xs" src="<?php the_field('franchise_image_2'); ?>">
 		</div>
 		<div class="col-sm-16 col-md-10">
 			<div class="ui segment bump-top">
@@ -165,7 +167,8 @@ get_header();
 		
 		
 		<div class="col-sm-16">
-			<img class="ui image centered" src="<?php the_field('slots_image'); ?>">
+			<img class="ui image centered hidden-xs" src="<?php the_field('slots_image'); ?>">
+			<img class="ui image centered visible-xs" src="<?php the_field('slots_image_2'); ?>">
 		</div>
 		<div class="col-sm-16 col-md-10">
 			<div class="ui segment bump-top ">

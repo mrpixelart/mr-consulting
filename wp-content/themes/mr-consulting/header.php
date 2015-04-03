@@ -24,6 +24,7 @@
 	<script src="<?php echo get_template_directory_uri(); ?>/bower_components/magnific-popup/dist/jquery.magnific-popup.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/bower_components/Naver/jquery.fs.naver.js"></script>
 	<script src="<?php echo get_template_directory_uri(); ?>/bower_components/parallax.js/parallax.js"></script>
+	<!-- <script src="<?php echo get_template_directory_uri(); ?>/bower_components/retina.js/dist/retina.js"></script> -->
 
 	<!--[if lt IE 9]>
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>

@@ -45,7 +45,7 @@ get_header();
 				<!-- <img class="ui image centered" src="<?php echo $researchImage; ?>"> -->
 				<h3><?php echo $researchHeadline; ?></h3>
 				<p><?php echo $researchBody; ?></p>
-				<!-- 			<a class="" href=""><?php echo $researchCta; ?></a> -->
+				<!-- <a class="" href=""><?php echo $researchCta; ?></a> -->
 			</div>
 		<?php endwhile; ?>
 	<?php endif; ?>
@@ -78,7 +78,7 @@ get_header();
 						<div class="list-padding">
 							<h4 class="inverted-text center"><?php echo $buildHeadline; ?></h4>
 							<p><?php echo $buildBody; ?></p>
-							<!-- 			<a class="" href=""><?php echo $buildCta; ?></a> -->
+							<!-- <a class="" href=""><?php echo $buildCta; ?></a> -->
 						</div>
 					</div>
 
@@ -103,6 +103,8 @@ get_header();
 			$strategyBody = get_sub_field('strategy_body');
 			$strategyImage = get_sub_field('strategy_image');
 			$strategyCta = get_sub_field('strategy_cta');
+			$strategySample = get_sub_field('strategy_sample');
+			$strategySubtitle = get_sub_field('strategy_subtitle');
 
 			?>
 
@@ -110,7 +112,7 @@ get_header();
 				<img class="ui image centered" src="<?php echo $strategyImage; ?>">
 				<h3><?php echo $strategyHeadline; ?></h3>
 				<p><?php echo $strategyBody; ?></p>
-				<a class="image-popup-vertical-fit" title="Business Model Canvas created for x project." href="<?php echo get_template_directory_uri(); ?>/images/hero.png"><?php echo $strategyCta; ?></a>
+				<a class="image-popup-vertical-fit" title="<?php echo $strategySubtitle; ?>" href="<?php echo $strategySample; ?>"><?php echo $strategyCta; ?></a>
 			</div>
 		<?php endwhile; ?>
 	<?php endif; ?>
@@ -120,7 +122,7 @@ get_header();
 		<h3 class="center"><?php the_field('strategy_feature_headline'); ?></h3>
 		<p class=""><?php the_field('strategy_feature_body'); ?></p>
 		<div class="center">
-			<a href="#" class="lead"><?php the_field('strategy_feature_cta'); ?></a>
+			<a href="<?php the_field('strategy_feature_sample'); ?>" target="_blank" class="lead"><?php the_field('strategy_feature_cta'); ?></a>
 		</div>
 		<img class="ui image centered" src="<?php the_field('strategy_feature_image'); ?>">
 	</div>
@@ -142,6 +144,8 @@ get_header();
 				$userBody = get_sub_field('user_body');
 				$userImage = get_sub_field('user_image');
 				$userCta = get_sub_field('user_cta');
+				$userSubtitle = get_sub_field('user_subtitle');
+				$userSample = get_sub_field('user_sample');
 
 				?>
 
@@ -149,7 +153,8 @@ get_header();
 					<img class="ui image centered" src="<?php echo $userImage; ?>">
 					<h3><?php echo $userHeadline; ?></h3>
 					<p><?php echo $userBody; ?></p>
-					<a><?php echo $userCta; ?></a>
+					<a class="image-popup-vertical-fit" title="<?php echo $userSubtitle; ?>" href="<?php echo $userSample; ?>"><?php echo $userCta; ?></a>
+
 				</div>
 			<?php endwhile; ?>
 		<?php endif; ?>
@@ -159,9 +164,11 @@ get_header();
 			<h3 class="center"><?php the_field('user_feature_headline'); ?></h3>
 			<p class=""><?php the_field('user_feature_body'); ?></p>
 			<div class="center">
-				<a href="#" class="lead"><?php the_field('user_feature_cta'); ?></a>
+				<a class="image-popup-vertical-fit lead" href="<?php the_field('user_featured_sample'); ?>"><?php the_field('user_feature_cta'); ?></a>
+
 			</div>
 			<img class="ui image centered" src="<?php the_field('user_feature_image'); ?>">
+
 		</div>
 	</div>
 </div>
@@ -181,6 +188,8 @@ get_header();
 			$architectureBody = get_sub_field('architecture_body');
 			$architectureImage = get_sub_field('architecture_image');
 			$architectureCta = get_sub_field('architecture_cta');
+			$architectureSubtitle = get_sub_field('architecture_subtitle');
+			$architectureSample = get_sub_field('architecture_sample');
 
 			?>
 
@@ -188,7 +197,8 @@ get_header();
 				<img class="ui image centered" src="<?php echo $architectureImage; ?>">
 				<h3><?php echo $architectureHeadline; ?></h3>
 				<p><?php echo $architectureBody; ?></p>
-				<a><?php echo $architectureCta; ?></a>
+				<a class="image-popup-vertical-fit" title="<?php echo $architectureSubtitle; ?>" href="<?php echo $architectureSample; ?>"><?php echo $architectureCta; ?></a>
+
 			</div>
 		<?php endwhile; ?>
 	<?php endif; ?>
@@ -198,7 +208,7 @@ get_header();
 		<h3 class="center"><?php the_field('architecture_feature_headline'); ?></h3>
 		<p class=""><?php the_field('architecture_feature_body'); ?></p>
 		<div class="center">
-			<a href="#" class="lead"><?php the_field('architecture_feature_cta'); ?></a>
+			<a class="image-popup-vertical-fit lead" href="<?php the_field('architecture_feature_sample'); ?>"><?php the_field('strategy_feature_cta'); ?></a>
 		</div>
 		<img class="ui image centered" src="<?php the_field('architecture_feature_image'); ?>">
 	</div>
@@ -220,6 +230,8 @@ get_header();
 				$designBody = get_sub_field('design_body');
 				$designImage = get_sub_field('design_image');
 				$designCta = get_sub_field('design_cta');
+				$designSample = get_sub_field('design_sample');
+				$designSubtitle = get_sub_field('design_subtitle');
 
 				?>
 
@@ -227,7 +239,7 @@ get_header();
 					<img class="ui image centered" src="<?php echo $designImage; ?>">
 					<h3><?php echo $designHeadline; ?></h3>
 					<p><?php echo $designBody; ?></p>
-					<a><?php echo $designCta; ?></a>
+				<a class="image-popup-vertical-fit" title="<?php echo $designSubtitle; ?>" href="<?php echo $designSample; ?>"><?php echo $designCta; ?></a>
 				</div>
 			<?php endwhile; ?>
 		<?php endif; ?>
@@ -237,7 +249,7 @@ get_header();
 			<h3 class="center"><?php the_field('design_feature_headline'); ?></h3>
 			<p class=""><?php the_field('design_feature_body'); ?></p>
 			<div class="center">
-				<a href="#" class="lead"><?php the_field('design_feature_cta'); ?></a>
+				<a class="" href="<?php the_field('design_feature_sample'); ?>"><?php the_field('design_feature_cta'); ?></a>
 			</div>
 			<img class="ui image centered" src="<?php the_field('design_feature_image'); ?>">
 		</div>
