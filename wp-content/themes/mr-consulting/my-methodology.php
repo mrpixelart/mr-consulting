@@ -208,7 +208,7 @@ get_header();
 		<h3 class="center"><?php the_field('architecture_feature_headline'); ?></h3>
 		<p class=""><?php the_field('architecture_feature_body'); ?></p>
 		<div class="center">
-			<a class="image-popup-vertical-fit lead" href="<?php the_field('architecture_feature_sample'); ?>"><?php the_field('strategy_feature_cta'); ?></a>
+			<a class="image-popup-vertical-fit lead" href="<?php the_field('architecture_feature_sample'); ?>"><?php the_field('architecture_feature_cta'); ?></a>
 		</div>
 		<img class="ui image centered" src="<?php the_field('architecture_feature_image'); ?>">
 	</div>
