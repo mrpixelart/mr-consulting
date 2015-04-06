@@ -1,6 +1,6 @@
 <?php
 /**
- * stylesheet Name: Home Page
+ * Template Name: Home Page
  *
  * @package mr-consulting
  *
@@ -10,7 +10,7 @@ get_header();
 
 ?>
 
-<div class="hero-image-header" data-parallax="scroll" data-image-src="<?php echo get_stylesheet_directory_uri(); ?>/images/hero.png" >
+<div data-image-src="<?php echo get_stylesheet_directory_uri(); ?>/images/hero.jpg" class="hero-image-header" data-parallax="scroll"  >
 	<div class="container">
 		<div class="row hero">
 			<div class="col-xs-16 col-md-6 col-lg-5">
@@ -57,7 +57,7 @@ get_header();
 </div>
 </div>
 
-<div class="hero-image" data-parallax="scroll" data-image-src="<?php echo get_stylesheet_directory_uri(); ?>/images/collaboration.png">
+<div data-image-src="<?php echo get_stylesheet_directory_uri(); ?>/images/collaboration.jpg" class="hero-image" data-parallax="scroll" >
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-14 col-lg-offset-1">
@@ -100,7 +100,7 @@ get_header();
 </div>
 </div>
 
-<div class="hero-image" data-parallax="scroll" data-image-src="<?php echo get_stylesheet_directory_uri(); ?>/images/build.png">
+<div data-image-src="<?php echo get_stylesheet_directory_uri(); ?>/images/build.jpg" class="hero-image" data-parallax="scroll">
 	<div class="hero-3">
 		<div class="container">
 			<div class="row">

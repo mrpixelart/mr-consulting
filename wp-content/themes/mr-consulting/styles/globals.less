@@ -184,6 +184,20 @@ li {
 	.mobile-bump {
 		margin-top: 20px !important;
 	}
+	a.btn {
+		font-size: 0.7rem !important;
+	}
+
+	.ui.segment {
+		padding: 0 !important;
+		box-shadow: none !important;
+		background-color: inherit;
+
+	}
+
+	.hero-image-header {
+		background-attachment:scroll !important;
+	}
 }
 
 
@@ -192,6 +206,11 @@ li {
 
 	//for nothing bigger than tablet
 	@media (max-width: 992px) {
+
+		.hero-image-header {
+			background-attachment:scroll !important;
+		}
+
 		ul#menu-main-menu {
 
 			li {
@@ -219,117 +238,3 @@ li {
 		margin-top: 32px;
 	}	
 }
-
-
-// @media screen and (min-width: 40em) {
-
-// 	// #toggle {
-// 	// 	-webkit-touch-callout: none;
-// 	// 	-webkit-user-select: none;
-// 	// 	-moz-user-select: none;
-// 	// 	-ms-user-select: none;
-// 	// 	user-select: none;
-// 	// 	display: block !important;
-// 	// 	width: 70px;
-// 	// 	
-// 	// 	
-// 	// 	margin: 0 -2em 1em 0;
-// 	// 	
-// 	// 	background: #181818 url("./images/hamburger.gif") no-repeat 50% 33%;
-// 	// }
-// }
-
-
-// .btn {
-// 	border-width: 2px;
-// 	border-style: solid;
-// 	background: transparent;
-// 	border-color:inherit;
-// }
-
-// .btn-primary {
-// 	background: transparent;
-// 	color: @brand-primary;
-// 	border-color: @brand-primary;
-// 	transition: @transition;
-// 	&:hover {
-// 		background: @brand-primary;
-// 		color: @white;
-// 		border-color: @brand-primary;
-// 		transition: @transition;
-// 	}
-// 	&:focus {
-// 		background: @brand-primary;
-// 		color: @white;
-// 		border-color: @brand-primary;
-// 		transition: @transition;
-// 	}
-// 	&:active {
-// 		background: @brand-primary;
-// 		color: @white;
-// 		border-color: @brand-primary;
-// 		transition: @transition;
-// 	}
-
-// }
-// .btn-secondary {
-// 	background: transparent;
-// 	color: @brand-secondary;
-// 	border-color: @brand-secondary;
-// 	transition: @transition;
-// 	&:hover {
-// 		background: @brand-secondary;
-// 		color: @white;
-// 		border-color: @brand-secondary;
-// 		transition: @transition;
-// 	}
-// 	&:focus {
-// 		background: @brand-secondary;
-// 		color: @white;
-// 		border-color: @brand-secondary;
-// 		transition: @transition;
-// 	}
-// 	&:active {
-// 		background: @brand-secondary;
-// 		color: @white;
-// 		border-color: @brand-secondary;
-// 		transition: @transition;
-// 	}
-// }
-// .btn-default {
-// 	background: transparent;
-// 	color: @gray-dark;
-// 	border-color: @gray-dark;
-// 	transition: @transition;
-// 	&:hover {
-// 		background: @gray-dark;
-// 		color: @white;
-// 		border-color: @gray-dark;
-// 		transition: @transition;
-// 	}
-// 	&:focus {
-// 		background: @gray-dark;
-// 		color: @white;
-// 		border-color: @gray-dark;
-// 		transition: @transition;
-// 	}
-// 	&:active {
-// 		background: @gray-dark;
-// 		color: @white;
-// 		border-color: @gray-dark;
-// 		transition: @transition;
-// 	}
-// }
-
-
-// .ui.inverted.teal.button, .ui.inverted.teal.buttons .button {
-// 	background-color: transparent;
-// 	box-shadow: 0 0 0 2px @brand-primary inset !important;
-// 	color: @brand-primary;
-// }
-
-// .ui.inverted.teal.active.button, .ui.inverted.teal.button:hover, .ui.inverted.teal.buttons .active.button, .ui.inverted.teal.buttons .button:hover {
-// 	box-shadow: 0 0 0 2px @brand-primary inset!important;
-// 	background-color: @brand-primary;
-// 	color: white;
-// }

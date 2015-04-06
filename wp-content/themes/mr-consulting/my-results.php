@@ -10,7 +10,7 @@ get_header();
 
 ?>
 
-<div class="hero-image-header" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/images/build.png">
+<div data-image-src="<?php echo get_stylesheet_directory_uri(); ?>/images/build.jpg" class="hero-image-header" data-parallax="scroll">
 	<div class="container">
 		<div class="row hero">
 			<div class="col-sm-16">

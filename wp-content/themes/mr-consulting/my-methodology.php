@@ -10,7 +10,7 @@ get_header();
 
 ?>
 
-<div class="hero-image-header" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/images/methods.png">
+<div data-image-src="<?php echo get_stylesheet_directory_uri(); ?>/images/methods.jpg" class="hero-image-header" data-parallax="scroll">
 	<div class="container">
 		<div class="row hero">
 			<div class="col-sm-16">
@@ -70,15 +70,16 @@ get_header();
 					$buildBody = get_sub_field('build_body');
 					$buildImage = get_sub_field('build_image');
 					$buildCta = get_sub_field('build_cta');
+					$buildAnchor = get_sub_field('build_anchor');
 
 					?>
 
 					<div class="col-sm-8 col-md-4">
-						<img class="ui image centered" src="<?php echo $buildImage; ?>">
+						<a href="#<?php echo $buildAnchor; ?>"><img class="ui image centered" src="<?php echo $buildImage; ?>"></a>
 						<div class="list-padding">
 							<h4 class="inverted-text center"><?php echo $buildHeadline; ?></h4>
 							<p><?php echo $buildBody; ?></p>
-							<!-- <a class="" href=""><?php echo $buildCta; ?></a> -->
+
 						</div>
 					</div>
 
@@ -92,7 +93,7 @@ get_header();
 <div id="bmc" class="container">
 	<div class="row bump-top">
 		<div class="col-sm-16">
-			<h2 class="section-header center"><?php the_field('strategy_title'); ?></h2>
+			<h2 id="strategy" class="section-header center"><?php the_field('strategy_title'); ?></h2>
 			<div class="ui divider"></div>
 		</div>
 		<?php if( have_rows('strategy_section') ): ?>
@@ -133,7 +134,7 @@ get_header();
 	<div id="persona" class="container">
 		<div class="row bump-top">
 			<div class="col-sm-16">
-				<h2 class="section-header center"><?php the_field('user_title'); ?></h2>
+				<h2 id="user" class="section-header center"><?php the_field('user_title'); ?></h2>
 				<div class="ui divider"></div>
 			</div>
 			<?php if( have_rows('user_section') ): ?>
@@ -177,7 +178,7 @@ get_header();
 <div class="container">
 	<div class="row bump-top">
 		<div class="col-sm-16">
-			<h2 class="section-header center"><?php the_field('architecture_title'); ?></h2>
+			<h2 id="architecture" class="section-header center"><?php the_field('architecture_title'); ?></h2>
 			<div class="ui divider"></div>
 		</div>
 		<?php if( have_rows('architecture_section') ): ?>
@@ -219,7 +220,7 @@ get_header();
 	<div class="container">
 		<div class="row bump-top">
 			<div class="col-sm-16">
-				<h2 class="section-header center"><?php the_field('design_title'); ?></h2>
+				<h2 id="design" class="section-header center"><?php the_field('design_title'); ?></h2>
 				<div class="ui divider"></div>
 			</div>
 			<?php if( have_rows('design_section') ): ?>
@@ -239,7 +240,7 @@ get_header();
 					<img class="ui image centered" src="<?php echo $designImage; ?>">
 					<h3><?php echo $designHeadline; ?></h3>
 					<p><?php echo $designBody; ?></p>
-				<a class="image-popup-vertical-fit" title="<?php echo $designSubtitle; ?>" href="<?php echo $designSample; ?>"><?php echo $designCta; ?></a>
+					<a class="image-popup-vertical-fit" title="<?php echo $designSubtitle; ?>" href="<?php echo $designSample; ?>"><?php echo $designCta; ?></a>
 				</div>
 			<?php endwhile; ?>
 		<?php endif; ?>

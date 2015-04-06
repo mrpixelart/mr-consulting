@@ -10,7 +10,7 @@ get_header();
 
 ?>
 
-<div class="hero-image-header" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri(); ?>/images/collaboration.png">
+<div data-image-src="<?php echo get_stylesheet_directory_uri(); ?>/images/collaboration.jpg" class="hero-image-header" data-parallax="scroll">
 	<div class="container">
 		<div class="row hero">
 			<div class="col-sm-16">
@@ -93,19 +93,19 @@ get_header();
 		<?php endwhile; ?>
 	<?php endif; ?>
 	<div class="col-sm-16">
-
-		<div class="ui segment bump-top">
-			<div class="col-md-6">
-				<img class="ui image img-center" src="<?php the_field('foundation_job_image'); ?>">
+		<div class="row">
+			<div class="ui segment bump-top">
+				<div class="col-md-6">
+					<img class="ui image img-center" src="<?php the_field('foundation_job_image'); ?>">
+				</div>
+				<div class="col-md-10">
+					<h4 class="bump-top"><?php the_field('foundation_job_title'); ?></h4>
+					<div class="sub header"><?php the_field('foundation_job_date'); ?></div>
+					<div class="ui divider"></div>
+					<p><?php the_field('foundation_job_description'); ?></p>
+					<p class="description"><em><?php the_field('foundation_job_work'); ?></em></p>
+				</div>
 			</div>
-			<div class="col-md-10">
-				<h4 class="bump-top"><?php the_field('foundation_job_title'); ?></h4>
-				<div class="sub header"><?php the_field('foundation_job_date'); ?></div>
-				<div class="ui divider"></div>
-				<p><?php the_field('foundation_job_description'); ?></p>
-				<p class="description"><em><?php the_field('foundation_job_work'); ?></em></p>
-			</div>
-
 		</div>
 	</div>
 </div>
@@ -138,18 +138,19 @@ get_header();
 		<?php endwhile; ?>
 	<?php endif; ?>
 	<div class="col-sm-16">
-		<div class="ui segment bump-top">
-			<div class="col-sm-16 col-md-6 ">
-				<img class="ui image img-center" src="<?php the_field('growth_job_image'); ?>">
+		<div class="row">
+			<div class="ui segment bump-top">
+				<div class="col-sm-16 col-md-6 ">
+					<img class="ui image img-center" src="<?php the_field('growth_job_image'); ?>">
+				</div>
+				<div class="col-md-10">
+					<h4 class="bump-top"><?php the_field('growth_job_title'); ?></h4>
+					<div class="sub header"><?php the_field('growth_job_date'); ?></div>
+					<div class="ui divider"></div>
+					<p><?php the_field('growth_job_description'); ?></p>
+					<p class="description"><em><?php the_field('growth_job_work'); ?></em></p>
+				</div>
 			</div>
-			<div class="col-md-10">
-				<h4 class="bump-top"><?php the_field('growth_job_title'); ?></h4>
-				<div class="sub header"><?php the_field('growth_job_date'); ?></div>
-				<div class="ui divider"></div>
-				<p><?php the_field('growth_job_description'); ?></p>
-				<p class="description"><em><?php the_field('growth_job_work'); ?></em></p>
-			</div>
-
 		</div>
 	</div>
 </div>
@@ -182,18 +183,19 @@ get_header();
 		<?php endwhile; ?>
 	<?php endif; ?>
 	<div class="col-sm-16">
-		<div class="ui segment bump-top">
-			<div class="col-md-6">
-				<img class="ui image img-center" src="<?php the_field('leadership_job_image'); ?>">
+		<div class="row">
+			<div class="ui segment bump-top">
+				<div class="col-md-6">
+					<img class="ui image img-center" src="<?php the_field('leadership_job_image'); ?>">
+				</div>
+				<div class="col-md-10">
+					<h4 class="bump-top"><?php the_field('leadership_job_title'); ?></h4>
+					<div class="sub header"><?php the_field('leadership_job_date'); ?></div>
+					<div class="ui divider"></div>
+					<p><?php the_field('leadership_job_description'); ?></p>
+					<p class="description"><em><?php the_field('leadership_job_work'); ?></em></p>
+				</div>
 			</div>
-			<div class="col-md-10">
-				<h4 class="bump-top"><?php the_field('leadership_job_title'); ?></h4>
-				<div class="sub header"><?php the_field('leadership_job_date'); ?></div>
-				<div class="ui divider"></div>
-				<p><?php the_field('leadership_job_description'); ?></p>
-				<p class="description"><em><?php the_field('leadership_job_work'); ?></em></p>
-			</div>
-
 		</div>
 	</div>
 </div>
